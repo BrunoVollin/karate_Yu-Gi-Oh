@@ -1,0 +1,1387 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <title>src.test.java.examples.test_Dark_Magician.api</title>  
+  </head>
+  <body>   
+    <div id="root-container">
+      <div id="leftnav">
+                
+        <div>
+  <div class="nav-logo">
+    <a href="karate-summary.html">
+      <img src="karate-logo.svg" alt="Karate"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">6</div>
+      <div id="nav-fail" class="bg-danger">0</div>
+    </div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>         
+  <div id="nav-date">
+    <div>2021-11-25 12:01:09 PM</div>
+  </div>        
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item passed">
+            <a href="#[1:6]"><span>[1:6]</span> <span>Verificar se a API responde</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[2:12]"><span>[2:12]</span> <span>Verificar se a API retorna Bad Request</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[3:18]"><span>[3:18]</span> <span>Verificar o nome e o id da carta Dark Magician</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[4:26]"><span>[4:26]</span> <span>Verificar o tipo das variaveis das cartas</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[5:34]"><span>[5:34]</span> <span>Verificar se a carta tem valor maior ou igual a &quot;0&quot;</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[6:41]"><span>[6:41]</span> <span>Verificar se o preco da primeira prova e igual a 11.37</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">src/test/java/examples/test_Dark_Magician/api.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">Executar testes funcionais na api Yu-Gi-Oh!</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1:6]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1:6]</span>
+                <span class="scenario-name">Verificar se a API responde</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>849</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1:6]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1:6]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def url_base = &#39;https://db.ygoprodeck.com/api/v7/cardinfo.php&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4">12:01:08.516 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.7">
+      <div class="step-ref passed">7</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url url_base</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.8">
+      <div class="step-ref passed">8</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>path &#39;?name=Dark_Magician&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">10</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.9">
+      <div class="step-ref passed">9</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">838</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.9">12:01:09.039 request:
+1 &gt; GET https://db.ygoprodeck.com/api/v7/cardinfo.php/?name=Dark_Magician
+1 &gt; Host: db.ygoprodeck.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.1)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+12:01:09.450 response time in milliseconds: 366
+1 &lt; 200
+1 &lt; Date: Thu, 25 Nov 2021 15:01:05 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Connection: keep-alive
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Access-Control-Allow-Methods: GET
+1 &lt; Access-Control-Allow-Headers: Content-Type, Authorization, X-Requested-With
+1 &lt; Vary: Accept-Encoding,User-Agent
+1 &lt; Last-Modified: Thu, 25 Nov 2021 14:47:26 GMT
+1 &lt; Cache-Control: max-age=10800
+1 &lt; CF-Cache-Status: HIT
+1 &lt; Age: 819
+1 &lt; Accept-Ranges: bytes
+1 &lt; Expect-CT: max-age=604800, report-uri=&quot;https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct&quot;
+1 &lt; Server: cloudflare
+1 &lt; CF-RAY: 6b3bc0140bb36aeb-GRU
+1 &lt; alt-svc: h3=&quot;:443&quot;; ma=86400, h3-29=&quot;:443&quot;; ma=86400, h3-28=&quot;:443&quot;; ma=86400, h3-27=&quot;:443&quot;; ma=86400
+{&quot;data&quot;:[{&quot;card_prices&quot;:[{&quot;coolstuffinc_price&quot;:&quot;4.99&quot;,&quot;tcgplayer_price&quot;:&quot;0.46&quot;,&quot;amazon_price&quot;:&quot;7.24&quot;,&quot;ebay_price&quot;:&quot;9.75&quot;,&quot;cardmarket_price&quot;:&quot;0.09&quot;}],&quot;def&quot;:2100,&quot;race&quot;:&quot;Spellcaster&quot;,&quot;card_sets&quot;:[{&quot;set_code&quot;:&quot;CT13-EN003&quot;,&quot;set_rarity&quot;:&quot;Ultra Rare&quot;,&quot;set_name&quot;:&quot;2016 Mega-Tins&quot;,&quot;set_rarity_code&quot;:&quot;(UR)&quot;,&quot;set_price&quot;:&quot;11.37&quot;},{&quot;set_code&quot;:&quot;CT14-EN001&quot;,&quot;set_rarity&quot;:&quot;Secret Rare&quot;,&quot;set_name&quot;:&quot;2017 Mega-Tins&quot;,&quot;set_rarity_code&quot;:&quot;(ScR)&quot;,&quot;set_price&quot;:&quot;6.77&quot;},{&quot;set_code&quot;:&quot;BPT-001&quot;,&quot;set_rarity&quot;:&quot;Secret Rare&quot;,&quot;set_name&quot;:&quot;Booster Pack Collectors Tins 2002&quot;,&quot;set_rarity_code&quot;:&quot;(ScR)&quot;,&quot;set_price&quot;:&quot;77.16&quot;},{&quot;set_code&quot;:&quot;BPT-007&quot;,&quot;set_rarity&quot;:&quot;Secret Rare&quot;,&quot;set_name&quot;:&quot;Collectible Tins 2003&quot;,&quot;set_rarity_code&quot;:&quot;(ScR)&quot;,&quot;set_price&quot;:&quot;19.51&quot;},{&quot;set_code&quot;:&quot;DB1-EN102&quot;,&quot;set_rarity&quot;:&quot;Ultra Rare&quot;,&quot;set_name&quot;:&quot;Dark Beginning 1&quot;,&quot;set_rarity_code&quot;:&quot;(UR)&quot;,&quot;set_price&quot;:&quot;25.12&quot;},{&quot;set_code&quot;:&quot;DLG1-EN004&quot;,&quot;set_rarity&quot;:&quot;Rare&quot;,&quot;set_name&quot;:&quot;Dark Legends&quot;,&quot;set_rarity_code&quot;:&quot;(R)&quot;,&quot;set_price&quot;:&quot;16.39&quot;},{&quot;set_code&quot;:&quot;DUPO-EN101&quot;,&quot;set_rarity&quot;:&quot;Ultra Rare&quot;,&quot;set_name&quot;:&quot;Duel Power&quot;,&quot;set_rarity_code&quot;:&quot;(UR)&quot;,&quot;set_price&quot;:&quot;4.32&quot;},{&quot;set_code&quot;:&quot;DTP1-EN002&quot;,&quot;set_rarity&quot;:&quot;Duel Terminal Normal Parallel Rare&quot;,&quot;set_name&quot;:&quot;Duel Terminal - Preview Wave 1&quot;,&quot;set_rarity_code&quot;:&quot;(DNPR)&quot;,&quot;set_price&quot;:&quot;0.00&quot;},{&quot;set_code&quot;:&quot;DTP1-EN002&quot;,&quot;set_rarity&quot;:&quot;Duel Terminal Rare Parallel Rare&quot;,&quot;set_name&quot;:&quot;Duel Terminal - Preview Wave 2&quot;,&quot;set_rarity_code&quot;:&quot;(DRPR)&quot;,&quot;set_price&quot;:&quot;0.00&quot;},{&quot;set_code&quot;:&quot;DT01-EN002&quot;,&quot;set_rarity&quot;:&quot;Duel Terminal Rare Parallel Rare&quot;,&quot;set_name&quot;:&quot;Duel Terminal 1&quot;,&quot;set_rarity_code&quot;:&quot;(DRPR)&quot;,&quot;set_price&quot;:&quot;18.56&quot;},{&quot;set_code&quot;:&quot;DL11-EN001&quot;,&quot;set_rarity&quot;:&quot;Rare&quot;,&quot;set_name&quot;:&quot;Duelist League 2 participation cards&quot;,&quot;set_rarity_code&quot;:&quot;(R)&quot;,&quot;set_price&quot;:&quot;679.42&quot;},{&quot;set_code&quot;:&quot;DPBC-EN008&quot;,&quot;set_rarity&quot;:&quot;Super Rare&quot;,&quot;set_name&quot;:&quot;Duelist Pack: Battle City&quot;,&quot;set_rarity_code&quot;:&quot;(SR)&quot;,&quot;set_price&quot;:&quot;6.69&quot;},{&quot;set_code&quot;:&quot;DPYG-EN001&quot;,&quot;set_rarity&quot;:&quot;Rare&quot;,&quot;set_name&quot;:&quot;Duelist Pack: Yugi&quot;,&quot;set_rarity_code&quot;:&quot;(R)&quot;,&quot;set_price&quot;:&quot;2.58&quot;},{&quot;set_code&quot;:&quot;DUSA-EN100&quot;,&quot;set_rarity&quot;:&quot;Ultra Rare&quot;,&quot;set_name&quot;:&quot;Duelist Saga&quot;,&quot;set_rarity_code&quot;:&quot;(UR)&quot;,&quot;set_price&quot;:&quot;9.84&quot;},{&quot;set_code&quot;:&quot;FL1-EN002&quot;,&quot;set_rarity&quot;:&quot;Secret Rare&quot;,&quot;set_name&quot;:&quot;Forbidden Legacy&quot;,&quot;set_rarity_code&quot;:&quot;(ScR)&quot;,&quot;set_price&quot;:&quot;17.9&quot;},{&quot;set_code&quot;:&quot;GFTP-EN128&quot;,&quot;set_rarity&quot;:&quot;Ghost Rare&quot;,&quot;set_name&quot;:&quot;Ghosts From the Past (set)&quot;,&quot;set_rarity_code&quot;:&quot;(GR)&quot;,&quot;set_price&quot;:&quot;717.85&quot;},{&quot;set_code&quot;:&quot;2021-EN001&quot;,&quot;set_rarity&quot;:&quot;Extra Secret Rare&quot;,&quot;set_name&quot;:&quot;KC Grand Tournament 2021 prize card&quot;,&quot;set_rarity_code&quot;:&quot;&quot;,&quot;set_price&quot;:&quot;0.00&quot;},{&quot;set_code&quot;:&quot;LOB-005&quot;,&quot;set_rarity&quot;:&quot;Ultra Rare&quot;,&quot;set_name&quot;:&quot;Legend of Blue Eyes White Dragon&quot;,&quot;set_rarity_code&quot;:&quot;(UR)&quot;,&quot;set_price&quot;:&quot;39.98&quot;},{&quot;set_code&quot;:&quot;LOB-E003&quot;,&quot;set_rarity&quot;:&quot;Ultra Rare&quot;,&quot;set_name&quot;:&quot;Legend of Blue Eyes White Dragon&quot;,&quot;set_rarity_code&quot;:&quot;(UR)&quot;,&quot;set_price&quot;:&quot;55.73&quot;},{&quot;set_code&quot;:&quot;LOB-EN005&quot;,&quot;set_rarity&quot;:&quot;Ultra Rare&quot;,&quot;set_name&quot;:&quot;Legend of Blue Eyes White Dragon&quot;,&quot;set_rarity_code&quot;:&quot;(UR)&quot;,&quot;set_price&quot;:&quot;60.17&quot;},{&quot;set_code&quot;:&quot;LC01-EN005&quot;,&quot;set_rarity&quot;:&quot;Ultra Rare&quot;,&quot;set_name&quot;:&quot;Legendary Collection&quot;,&quot;set_rarity_code&quot;:&quot;(UR)&quot;,&quot;set_price&quot;:&quot;5.63&quot;},{&quot;set_code&quot;:&quot;LCYW-EN001&quot;,&quot;set_rarity&quot;:&quot;Secret Rare&quot;,&quot;set_name&quot;:&quot;Legendary Collection 3: Yugi&#39;s World Mega Pack&quot;,&quot;set_rarity_code&quot;:&quot;(ScR)&quot;,&quot;set_price&quot;:&quot;16.89&quot;},{&quot;set_code&quot;:&quot;LDK2-ENY10&quot;,&quot;set_rarity&quot;:&quot;Common&quot;,&quot;set_name&quot;:&quot;Legendary Decks II&quot;,&quot;set_rarity_code&quot;:&quot;(C)&quot;,&quot;set_price&quot;:&quot;2.3&quot;},{&quot;set_code&quot;:&quot;LEDD-ENA01&quot;,&quot;set_rarity&quot;:&quot;Common&quot;,&quot;set_name&quot;:&quot;Legendary Dragon Decks&quot;,&quot;set_rarity_code&quot;:&quot;(C)&quot;,&quot;set_price&quot;:&quot;1.71&quot;},{&quot;set_code&quot;:&quot;MAGO-EN002&quot;,&quot;set_rarity&quot;:&quot;Premium Gold Rare&quot;,&quot;set_name&quot;:&quot;Maximum Gold&quot;,&quot;set_rarity_code&quot;:&quot;(PG)&quot;,&quot;set_price&quot;:&quot;13.59&quot;},{&quot;set_code&quot;:&quot;RP01-EN003&quot;,&quot;set_rarity&quot;:&quot;Ultra Rare&quot;,&quot;set_name&quot;:&quot;Retro Pack&quot;,&quot;set_rarity_code&quot;:&quot;(UR)&quot;,&quot;set_price&quot;:&quot;536.88&quot;},{&quot;set_code&quot;:&quot;JUMP-EN049&quot;,&quot;set_rarity&quot;:&quot;Ultra Rare&quot;,&quot;set_name&quot;:&quot;Shonen Jump Vol. 9, Issue 4 promotional card&quot;,&quot;set_rarity_code&quot;:&quot;(UR)&quot;,&quot;set_price&quot;:&quot;109.57&quot;},{&quot;set_code&quot;:&quot;SS01-ENA01&quot;,&quot;set_rarity&quot;:&quot;Common&quot;,&quot;set_name&quot;:&quot;Speed Duel Starter Decks: Destiny Masters&quot;,&quot;set_rarity_code&quot;:&quot;(C)&quot;,&quot;set_price&quot;:&quot;1.49&quot;},{&quot;set_code&quot;:&quot;SS04-ENA01&quot;,&quot;set_rarity&quot;:&quot;Common&quot;,&quot;set_name&quot;:&quot;Speed Duel Starter Decks: Match of the Millennium&quot;,&quot;set_rarity_code&quot;:&quot;(C)&quot;,&quot;set_price&quot;:&quot;1.63&quot;},{&quot;set_code&quot;:&quot;STP1-EN001&quot;,&quot;set_rarity&quot;:&quot;Ultra Rare&quot;,&quot;set_name&quot;:&quot;Speed Duel Tournament Pack 1&quot;,&quot;set_rarity_code&quot;:&quot;(UR)&quot;,&quot;set_price&quot;:&quot;109.6&quot;},{&quot;set_code&quot;:&quot;SBCB-EN001&quot;,&quot;set_rarity&quot;:&quot;Common&quot;,&quot;set_name&quot;:&quot;Speed Duel: Battle City Box&quot;,&quot;set_rarity_code&quot;:&quot;(C)&quot;,&quot;set_price&quot;:&quot;1.52&quot;},{&quot;set_code&quot;:&quot;SBCB-EN001&quot;,&quot;set_rarity&quot;:&quot;Secret Rare&quot;,&quot;set_name&quot;:&quot;Speed Duel: Battle City Box&quot;,&quot;set_rarity_code&quot;:&quot;(ScR)&quot;,&quot;set_price&quot;:&quot;7.3&quot;},{&quot;set_code&quot;:&quot;SDY-006&quot;,&quot;set_rarity&quot;:&quot;Ultra Rare&quot;,&quot;set_name&quot;:&quot;Starter Deck: Yugi&quot;,&quot;set_rarity_code&quot;:&quot;(UR)&quot;,&quot;set_price&quot;:&quot;14.79&quot;},{&quot;set_code&quot;:&quot;SDY-E005&quot;,&quot;set_rarity&quot;:&quot;Ultra Rare&quot;,&quot;set_name&quot;:&quot;Starter Deck: Yugi&quot;,&quot;set_rarity_code&quot;:&quot;(UR)&quot;,&quot;set_price&quot;:&quot;24.43&quot;},{&quot;set_code&quot;:&quot;SYE-001&quot;,&quot;set_rarity&quot;:&quot;Super Rare&quot;,&quot;set_name&quot;:&quot;Starter Deck: Yugi Evolution&quot;,&quot;set_rarity_code&quot;:&quot;(SR)&quot;,&quot;set_price&quot;:&quot;5.77&quot;},{&quot;set_code&quot;:&quot;YSYR-EN001&quot;,&quot;set_rarity&quot;:&quot;Common&quot;,&quot;set_name&quot;:&quot;Starter Deck: Yugi Reloaded&quot;,&quot;set_rarity_code&quot;:&quot;(C)&quot;,&quot;set_price&quot;:&quot;2.47&quot;},{&quot;set_code&quot;:&quot;YSYR-EN001&quot;,&quot;set_rarity&quot;:&quot;Ultimate Rare&quot;,&quot;set_name&quot;:&quot;Starter Deck: Yugi Reloaded&quot;,&quot;set_rarity_code&quot;:&quot;(UtR)&quot;,&quot;set_price&quot;:&quot;13.29&quot;},{&quot;set_code&quot;:&quot;SD6-EN003&quot;,&quot;set_rarity&quot;:&quot;Common&quot;,&quot;set_name&quot;:&quot;Structure Deck: Spellcaster&#39;s Judgment&quot;,&quot;set_rarity_code&quot;:&quot;(C)&quot;,&quot;set_price&quot;:&quot;2.78&quot;},{&quot;set_code&quot;:&quot;SDMY-EN010&quot;,&quot;set_rarity&quot;:&quot;Common&quot;,&quot;set_name&quot;:&quot;Structure Deck: Yugi Muto&quot;,&quot;set_rarity_code&quot;:&quot;(C)&quot;,&quot;set_price&quot;:&quot;5.73&quot;},{&quot;set_code&quot;:&quot;JMPS-EN003&quot;,&quot;set_rarity&quot;:&quot;Ultra Rare&quot;,&quot;set_name&quot;:&quot;WSJ Jump Pack Fall 2016 promotional card&quot;,&quot;set_rarity_code&quot;:&quot;(UR)&quot;,&quot;set_price&quot;:&quot;113.64&quot;},{&quot;set_code&quot;:&quot;DDS-002&quot;,&quot;set_rarity&quot;:&quot;Prismatic Secret Rare&quot;,&quot;set_name&quot;:&quot;Yu-Gi-Oh! Dark Duel Stories promotional cards&quot;,&quot;set_rarity_code&quot;:&quot;(PScR)&quot;,&quot;set_price&quot;:&quot;1672.85&quot;},{&quot;set_code&quot;:&quot;PCY-004&quot;,&quot;set_rarity&quot;:&quot;Prismatic Secret Rare&quot;,&quot;set_name&quot;:&quot;Yu-Gi-Oh! Power of Chaos: Yugi the Destiny promotional cards&quot;,&quot;set_rarity_code&quot;:&quot;(PScR)&quot;,&quot;set_price&quot;:&quot;68.29&quot;},{&quot;set_code&quot;:&quot;PCY-E004&quot;,&quot;set_rarity&quot;:&quot;Prismatic Secret Rare&quot;,&quot;set_name&quot;:&quot;Yu-Gi-Oh! Power of Chaos: Yugi the Destiny promotional cards&quot;,&quot;set_rarity_code&quot;:&quot;(PScR)&quot;,&quot;set_price&quot;:&quot;90.88&quot;},{&quot;set_code&quot;:&quot;MVP1-EN054&quot;,&quot;set_rarity&quot;:&quot;Ultra Rare&quot;,&quot;set_name&quot;:&quot;Yu-Gi-Oh! The Dark Side of Dimensions Movie Pack&quot;,&quot;set_rarity_code&quot;:&quot;(UR)&quot;,&quot;set_price&quot;:&quot;4.81&quot;},{&quot;set_code&quot;:&quot;MVP1-ENS54&quot;,&quot;set_rarity&quot;:&quot;Secret Rare&quot;,&quot;set_name&quot;:&quot;Yu-Gi-Oh! The Dark Side of Dimensions Movie Pack Secret Edition&quot;,&quot;set_rarity_code&quot;:&quot;(ScR)&quot;,&quot;set_price&quot;:&quot;7.47&quot;},{&quot;set_code&quot;:&quot;MVP1-ENSV3&quot;,&quot;set_rarity&quot;:&quot;Ultra Rare&quot;,&quot;set_name&quot;:&quot;Yu-Gi-Oh! The Dark Side of Dimensions Movie Pack Secret Edition&quot;,&quot;set_rarity_code&quot;:&quot;(UR)&quot;,&quot;set_price&quot;:&quot;4.17&quot;},{&quot;set_code&quot;:&quot;MVP1-ENSE3&quot;,&quot;set_rarity&quot;:&quot;Ultra Rare&quot;,&quot;set_name&quot;:&quot;Yu-Gi-Oh! The Dark Side of Dimensions Movie Pack Special Edition&quot;,&quot;set_rarity_code&quot;:&quot;(UR)&quot;,&quot;set_price&quot;:&quot;2.88&quot;},{&quot;set_code&quot;:&quot;MVP1-ENG54&quot;,&quot;set_rarity&quot;:&quot;Gold Rare&quot;,&quot;set_name&quot;:&quot;Yu-Gi-Oh! The Dark Side of Dimensions Movie Pack: Gold Edition&quot;,&quot;set_rarity_code&quot;:&quot;(GUR)&quot;,&quot;set_price&quot;:&quot;5.06&quot;},{&quot;set_code&quot;:&quot;MVP1-ENGV3&quot;,&quot;set_rarity&quot;:&quot;Gold Secret Rare&quot;,&quot;set_name&quot;:&quot;Yu-Gi-Oh! The Dark Side of Dimensions Movie Pack: Gold Edition&quot;,&quot;set_rarity_code&quot;:&quot;(GScR)&quot;,&quot;set_price&quot;:&quot;8.09&quot;},{&quot;set_code&quot;:&quot;YUCB-EN001&quot;,&quot;set_rarity&quot;:&quot;Ultra Rare&quot;,&quot;set_name&quot;:&quot;Yugi&#39;s Collector Box&quot;,&quot;set_rarity_code&quot;:&quot;(UR)&quot;,&quot;set_price&quot;:&quot;4.98&quot;},{&quot;set_code&quot;:&quot;YGLD-ENA03&quot;,&quot;set_rarity&quot;:&quot;Common&quot;,&quot;set_name&quot;:&quot;Yugi&#39;s Legendary Decks&quot;,&quot;set_rarity_code&quot;:&quot;(C)&quot;,&quot;set_price&quot;:&quot;0&quot;},{&quot;set_code&quot;:&quot;YGLD-ENB02&quot;,&quot;set_rarity&quot;:&quot;Ultra Rare&quot;,&quot;set_name&quot;:&quot;Yugi&#39;s Legendary Decks&quot;,&quot;set_rarity_code&quot;:&quot;(UR)&quot;,&quot;set_price&quot;:&quot;0&quot;},{&quot;set_code&quot;:&quot;YGLD-ENC09&quot;,&quot;set_rarity&quot;:&quot;Ultra Rare&quot;,&quot;set_name&quot;:&quot;Yugi&#39;s Legendary Decks&quot;,&quot;set_rarity_code&quot;:&quot;(UR)&quot;,&quot;set_price&quot;:&quot;0&quot;}],&quot;level&quot;:7,&quot;type&quot;:&quot;Normal Monster&quot;,&quot;archetype&quot;:&quot;Dark Magician&quot;,&quot;name&quot;:&quot;Dark Magician&quot;,&quot;atk&quot;:2500,&quot;card_images&quot;:[{&quot;image_url&quot;:&quot;https:\/\/storage.googleapis.com\/ygoprodeck.com\/pics\/46986421.jpg&quot;,&quot;image_url_small&quot;:&quot;https:\/\/storage.googleapis.com\/ygoprodeck.com\/pics_small\/46986421.jpg&quot;,&quot;id&quot;:46986421},{&quot;image_url&quot;:&quot;https:\/\/storage.googleapis.com\/ygoprodeck.com\/pics\/46986420.jpg&quot;,&quot;image_url_small&quot;:&quot;https:\/\/storage.googleapis.com\/ygoprodeck.com\/pics_small\/46986420.jpg&quot;,&quot;id&quot;:46986420},{&quot;image_url&quot;:&quot;https:\/\/storage.googleapis.com\/ygoprodeck.com\/pics\/46986414.jpg&quot;,&quot;image_url_small&quot;:&quot;https:\/\/storage.googleapis.com\/ygoprodeck.com\/pics_small\/46986414.jpg&quot;,&quot;id&quot;:46986414},{&quot;image_url&quot;:&quot;https:\/\/storage.googleapis.com\/ygoprodeck.com\/pics\/46986415.jpg&quot;,&quot;image_url_small&quot;:&quot;https:\/\/storage.googleapis.com\/ygoprodeck.com\/pics_small\/46986415.jpg&quot;,&quot;id&quot;:46986415},{&quot;image_url&quot;:&quot;https:\/\/storage.googleapis.com\/ygoprodeck.com\/pics\/46986416.jpg&quot;,&quot;image_url_small&quot;:&quot;https:\/\/storage.googleapis.com\/ygoprodeck.com\/pics_small\/46986416.jpg&quot;,&quot;id&quot;:46986416},{&quot;image_url&quot;:&quot;https:\/\/storage.googleapis.com\/ygoprodeck.com\/pics\/46986417.jpg&quot;,&quot;image_url_small&quot;:&quot;https:\/\/storage.googleapis.com\/ygoprodeck.com\/pics_small\/46986417.jpg&quot;,&quot;id&quot;:46986417},{&quot;image_url&quot;:&quot;https:\/\/storage.googleapis.com\/ygoprodeck.com\/pics\/46986418.jpg&quot;,&quot;image_url_small&quot;:&quot;https:\/\/storage.googleapis.com\/ygoprodeck.com\/pics_small\/46986418.jpg&quot;,&quot;id&quot;:46986418},{&quot;image_url&quot;:&quot;https:\/\/storage.googleapis.com\/ygoprodeck.com\/pics\/46986419.jpg&quot;,&quot;image_url_small&quot;:&quot;https:\/\/storage.googleapis.com\/ygoprodeck.com\/pics_small\/46986419.jpg&quot;,&quot;id&quot;:46986419},{&quot;image_url&quot;:&quot;https:\/\/storage.googleapis.com\/ygoprodeck.com\/pics\/36996508.jpg&quot;,&quot;image_url_small&quot;:&quot;https:\/\/storage.googleapis.com\/ygoprodeck.com\/pics_small\/36996508.jpg&quot;,&quot;id&quot;:36996508}],&quot;id&quot;:46986421,&quot;attribute&quot;:&quot;DARK&quot;,&quot;desc&quot;:&quot;The ultimate wizard in terms of attack and defense.&quot;}]}
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.10">
+      <div class="step-ref passed">10</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[2:12]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[2:12]</span>
+                <span class="scenario-name">Verificar se a API retorna Bad Request</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>1068</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[2:12]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[2:12]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def url_base = &#39;https://db.ygoprodeck.com/api/v7/cardinfo.php&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">5</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4">12:01:08.529 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.13">
+      <div class="step-ref passed">13</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url url_base</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.14">
+      <div class="step-ref passed">14</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>path &#39;?naxsxsme=Dark_Magician&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">11</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.15">
+      <div class="step-ref passed">15</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1053</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.15">12:01:09.036 request:
+1 &gt; GET https://db.ygoprodeck.com/api/v7/cardinfo.php/?naxsxsme=Dark_Magician
+1 &gt; Host: db.ygoprodeck.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.1)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+12:01:09.671 response time in milliseconds: 632
+1 &lt; 400
+1 &lt; Date: Thu, 25 Nov 2021 15:01:05 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Connection: keep-alive
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Access-Control-Allow-Methods: GET
+1 &lt; Access-Control-Allow-Headers: Content-Type, Authorization, X-Requested-With
+1 &lt; Vary: Accept-Encoding,User-Agent
+1 &lt; CF-Cache-Status: BYPASS
+1 &lt; Expect-CT: max-age=604800, report-uri=&quot;https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct&quot;
+1 &lt; Server: cloudflare
+1 &lt; CF-RAY: 6b3bc0140d91f3b7-GRU
+1 &lt; alt-svc: h3=&quot;:443&quot;; ma=86400, h3-29=&quot;:443&quot;; ma=86400, h3-28=&quot;:443&quot;; ma=86400, h3-27=&quot;:443&quot;; ma=86400
+{&quot;error&quot;:&quot;No valid parameter set. This API accepts the following parameters: &#39;name&#39;, &#39;fname&#39;, &#39;desc&#39;, &#39;effect&#39;, &#39;sort&#39;, &#39;sortorder&#39;, &#39;num&#39;, &#39;offset&#39;, &#39;type&#39;, &#39;atk&#39;, &#39;def&#39;, &#39;level&#39;, &#39;race&#39;, &#39;attribute&#39;, &#39;set&#39;, &#39;rarity&#39;, &#39;archetype&#39;, &#39;set&#39;, &#39;banlist&#39;, &#39;link&#39;, &#39;scale&#39;, &#39;linkmarker&#39;, &#39;format&#39;, &#39;staple&#39;, &#39;misc&#39;, &#39;includeAliased&#39;, &#39;startdate&#39;, &#39;enddate&#39;, &#39;dateregion&#39;, &#39;startprice&#39;, &#39;endprice&#39;, &#39;num&#39;, &#39;offset&#39;.&quot;}
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.16">
+      <div class="step-ref passed">16</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 400</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[3:18]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[3:18]</span>
+                <span class="scenario-name">Verificar o nome e o id da carta Dark Magician</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>963</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[3:18]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[3:18]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def url_base = &#39;https://db.ygoprodeck.com/api/v7/cardinfo.php&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4">12:01:08.515 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.19">
+      <div class="step-ref passed">19</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url url_base</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.20">
+      <div class="step-ref passed">20</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>path &#39;?name=Dark_Magician&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">8</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.21">
+      <div class="step-ref passed">21</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">896</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.21">12:01:09.042 request:
+1 &gt; GET https://db.ygoprodeck.com/api/v7/cardinfo.php/?name=Dark_Magician
+1 &gt; Host: db.ygoprodeck.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.1)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+12:01:09.492 response time in milliseconds: 372
+1 &lt; 200
+1 &lt; Date: Thu, 25 Nov 2021 15:01:05 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Connection: keep-alive
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Access-Control-Allow-Methods: GET
+1 &lt; Access-Control-Allow-Headers: Content-Type, Authorization, X-Requested-With
+1 &lt; Vary: Accept-Encoding,User-Agent
+1 &lt; Last-Modified: Thu, 25 Nov 2021 14:47:26 GMT
+1 &lt; Cache-Control: max-age=10800
+1 &lt; CF-Cache-Status: HIT
+1 &lt; Age: 819
+1 &lt; Accept-Ranges: bytes
+1 &lt; Expect-CT: max-age=604800, report-uri=&quot;https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct&quot;
+1 &lt; Server: cloudflare
+1 &lt; CF-RAY: 6b3bc0140821799f-GRU
+1 &lt; alt-svc: h3=&quot;:443&quot;; ma=86400, h3-29=&quot;:443&quot;; ma=86400, h3-28=&quot;:443&quot;; ma=86400, h3-27=&quot;:443&quot;; ma=86400
+{&quot;data&quot;:[{&quot;card_prices&quot;:[{&quot;coolstuffinc_price&quot;:&quot;4.99&quot;,&quot;tcgplayer_price&quot;:&quot;0.46&quot;,&quot;amazon_price&quot;:&quot;7.24&quot;,&quot;ebay_price&quot;:&quot;9.75&quot;,&quot;cardmarket_price&quot;:&quot;0.09&quot;}],&quot;def&quot;:2100,&quot;race&quot;:&quot;Spellcaster&quot;,&quot;card_sets&quot;:[{&quot;set_code&quot;:&quot;CT13-EN003&quot;,&quot;set_rarity&quot;:&quot;Ultra Rare&quot;,&quot;set_name&quot;:&quot;2016 Mega-Tins&quot;,&quot;set_rarity_code&quot;:&quot;(UR)&quot;,&quot;set_price&quot;:&quot;11.37&quot;},{&quot;set_code&quot;:&quot;CT14-EN001&quot;,&quot;set_rarity&quot;:&quot;Secret Rare&quot;,&quot;set_name&quot;:&quot;2017 Mega-Tins&quot;,&quot;set_rarity_code&quot;:&quot;(ScR)&quot;,&quot;set_price&quot;:&quot;6.77&quot;},{&quot;set_code&quot;:&quot;BPT-001&quot;,&quot;set_rarity&quot;:&quot;Secret Rare&quot;,&quot;set_name&quot;:&quot;Booster Pack Collectors Tins 2002&quot;,&quot;set_rarity_code&quot;:&quot;(ScR)&quot;,&quot;set_price&quot;:&quot;77.16&quot;},{&quot;set_code&quot;:&quot;BPT-007&quot;,&quot;set_rarity&quot;:&quot;Secret Rare&quot;,&quot;set_name&quot;:&quot;Collectible Tins 2003&quot;,&quot;set_rarity_code&quot;:&quot;(ScR)&quot;,&quot;set_price&quot;:&quot;19.51&quot;},{&quot;set_code&quot;:&quot;DB1-EN102&quot;,&quot;set_rarity&quot;:&quot;Ultra Rare&quot;,&quot;set_name&quot;:&quot;Dark Beginning 1&quot;,&quot;set_rarity_code&quot;:&quot;(UR)&quot;,&quot;set_price&quot;:&quot;25.12&quot;},{&quot;set_code&quot;:&quot;DLG1-EN004&quot;,&quot;set_rarity&quot;:&quot;Rare&quot;,&quot;set_name&quot;:&quot;Dark Legends&quot;,&quot;set_rarity_code&quot;:&quot;(R)&quot;,&quot;set_price&quot;:&quot;16.39&quot;},{&quot;set_code&quot;:&quot;DUPO-EN101&quot;,&quot;set_rarity&quot;:&quot;Ultra Rare&quot;,&quot;set_name&quot;:&quot;Duel Power&quot;,&quot;set_rarity_code&quot;:&quot;(UR)&quot;,&quot;set_price&quot;:&quot;4.32&quot;},{&quot;set_code&quot;:&quot;DTP1-EN002&quot;,&quot;set_rarity&quot;:&quot;Duel Terminal Normal Parallel Rare&quot;,&quot;set_name&quot;:&quot;Duel Terminal - Preview Wave 1&quot;,&quot;set_rarity_code&quot;:&quot;(DNPR)&quot;,&quot;set_price&quot;:&quot;0.00&quot;},{&quot;set_code&quot;:&quot;DTP1-EN002&quot;,&quot;set_rarity&quot;:&quot;Duel Terminal Rare Parallel Rare&quot;,&quot;set_name&quot;:&quot;Duel Terminal - Preview Wave 2&quot;,&quot;set_rarity_code&quot;:&quot;(DRPR)&quot;,&quot;set_price&quot;:&quot;0.00&quot;},{&quot;set_code&quot;:&quot;DT01-EN002&quot;,&quot;set_rarity&quot;:&quot;Duel Terminal Rare Parallel Rare&quot;,&quot;set_name&quot;:&quot;Duel Terminal 1&quot;,&quot;set_rarity_code&quot;:&quot;(DRPR)&quot;,&quot;set_price&quot;:&quot;18.56&quot;},{&quot;set_code&quot;:&quot;DL11-EN001&quot;,&quot;set_rarity&quot;:&quot;Rare&quot;,&quot;set_name&quot;:&quot;Duelist League 2 participation cards&quot;,&quot;set_rarity_code&quot;:&quot;(R)&quot;,&quot;set_price&quot;:&quot;679.42&quot;},{&quot;set_code&quot;:&quot;DPBC-EN008&quot;,&quot;set_rarity&quot;:&quot;Super Rare&quot;,&quot;set_name&quot;:&quot;Duelist Pack: Battle City&quot;,&quot;set_rarity_code&quot;:&quot;(SR)&quot;,&quot;set_price&quot;:&quot;6.69&quot;},{&quot;set_code&quot;:&quot;DPYG-EN001&quot;,&quot;set_rarity&quot;:&quot;Rare&quot;,&quot;set_name&quot;:&quot;Duelist Pack: Yugi&quot;,&quot;set_rarity_code&quot;:&quot;(R)&quot;,&quot;set_price&quot;:&quot;2.58&quot;},{&quot;set_code&quot;:&quot;DUSA-EN100&quot;,&quot;set_rarity&quot;:&quot;Ultra Rare&quot;,&quot;set_name&quot;:&quot;Duelist Saga&quot;,&quot;set_rarity_code&quot;:&quot;(UR)&quot;,&quot;set_price&quot;:&quot;9.84&quot;},{&quot;set_code&quot;:&quot;FL1-EN002&quot;,&quot;set_rarity&quot;:&quot;Secret Rare&quot;,&quot;set_name&quot;:&quot;Forbidden Legacy&quot;,&quot;set_rarity_code&quot;:&quot;(ScR)&quot;,&quot;set_price&quot;:&quot;17.9&quot;},{&quot;set_code&quot;:&quot;GFTP-EN128&quot;,&quot;set_rarity&quot;:&quot;Ghost Rare&quot;,&quot;set_name&quot;:&quot;Ghosts From the Past (set)&quot;,&quot;set_rarity_code&quot;:&quot;(GR)&quot;,&quot;set_price&quot;:&quot;717.85&quot;},{&quot;set_code&quot;:&quot;2021-EN001&quot;,&quot;set_rarity&quot;:&quot;Extra Secret Rare&quot;,&quot;set_name&quot;:&quot;KC Grand Tournament 2021 prize card&quot;,&quot;set_rarity_code&quot;:&quot;&quot;,&quot;set_price&quot;:&quot;0.00&quot;},{&quot;set_code&quot;:&quot;LOB-005&quot;,&quot;set_rarity&quot;:&quot;Ultra Rare&quot;,&quot;set_name&quot;:&quot;Legend of Blue Eyes White Dragon&quot;,&quot;set_rarity_code&quot;:&quot;(UR)&quot;,&quot;set_price&quot;:&quot;39.98&quot;},{&quot;set_code&quot;:&quot;LOB-E003&quot;,&quot;set_rarity&quot;:&quot;Ultra Rare&quot;,&quot;set_name&quot;:&quot;Legend of Blue Eyes White Dragon&quot;,&quot;set_rarity_code&quot;:&quot;(UR)&quot;,&quot;set_price&quot;:&quot;55.73&quot;},{&quot;set_code&quot;:&quot;LOB-EN005&quot;,&quot;set_rarity&quot;:&quot;Ultra Rare&quot;,&quot;set_name&quot;:&quot;Legend of Blue Eyes White Dragon&quot;,&quot;set_rarity_code&quot;:&quot;(UR)&quot;,&quot;set_price&quot;:&quot;60.17&quot;},{&quot;set_code&quot;:&quot;LC01-EN005&quot;,&quot;set_rarity&quot;:&quot;Ultra Rare&quot;,&quot;set_name&quot;:&quot;Legendary Collection&quot;,&quot;set_rarity_code&quot;:&quot;(UR)&quot;,&quot;set_price&quot;:&quot;5.63&quot;},{&quot;set_code&quot;:&quot;LCYW-EN001&quot;,&quot;set_rarity&quot;:&quot;Secret Rare&quot;,&quot;set_name&quot;:&quot;Legendary Collection 3: Yugi&#39;s World Mega Pack&quot;,&quot;set_rarity_code&quot;:&quot;(ScR)&quot;,&quot;set_price&quot;:&quot;16.89&quot;},{&quot;set_code&quot;:&quot;LDK2-ENY10&quot;,&quot;set_rarity&quot;:&quot;Common&quot;,&quot;set_name&quot;:&quot;Legendary Decks II&quot;,&quot;set_rarity_code&quot;:&quot;(C)&quot;,&quot;set_price&quot;:&quot;2.3&quot;},{&quot;set_code&quot;:&quot;LEDD-ENA01&quot;,&quot;set_rarity&quot;:&quot;Common&quot;,&quot;set_name&quot;:&quot;Legendary Dragon Decks&quot;,&quot;set_rarity_code&quot;:&quot;(C)&quot;,&quot;set_price&quot;:&quot;1.71&quot;},{&quot;set_code&quot;:&quot;MAGO-EN002&quot;,&quot;set_rarity&quot;:&quot;Premium Gold Rare&quot;,&quot;set_name&quot;:&quot;Maximum Gold&quot;,&quot;set_rarity_code&quot;:&quot;(PG)&quot;,&quot;set_price&quot;:&quot;13.59&quot;},{&quot;set_code&quot;:&quot;RP01-EN003&quot;,&quot;set_rarity&quot;:&quot;Ultra Rare&quot;,&quot;set_name&quot;:&quot;Retro Pack&quot;,&quot;set_rarity_code&quot;:&quot;(UR)&quot;,&quot;set_price&quot;:&quot;536.88&quot;},{&quot;set_code&quot;:&quot;JUMP-EN049&quot;,&quot;set_rarity&quot;:&quot;Ultra Rare&quot;,&quot;set_name&quot;:&quot;Shonen Jump Vol. 9, Issue 4 promotional card&quot;,&quot;set_rarity_code&quot;:&quot;(UR)&quot;,&quot;set_price&quot;:&quot;109.57&quot;},{&quot;set_code&quot;:&quot;SS01-ENA01&quot;,&quot;set_rarity&quot;:&quot;Common&quot;,&quot;set_name&quot;:&quot;Speed Duel Starter Decks: Destiny Masters&quot;,&quot;set_rarity_code&quot;:&quot;(C)&quot;,&quot;set_price&quot;:&quot;1.49&quot;},{&quot;set_code&quot;:&quot;SS04-ENA01&quot;,&quot;set_rarity&quot;:&quot;Common&quot;,&quot;set_name&quot;:&quot;Speed Duel Starter Decks: Match of the Millennium&quot;,&quot;set_rarity_code&quot;:&quot;(C)&quot;,&quot;set_price&quot;:&quot;1.63&quot;},{&quot;set_code&quot;:&quot;STP1-EN001&quot;,&quot;set_rarity&quot;:&quot;Ultra Rare&quot;,&quot;set_name&quot;:&quot;Speed Duel Tournament Pack 1&quot;,&quot;set_rarity_code&quot;:&quot;(UR)&quot;,&quot;set_price&quot;:&quot;109.6&quot;},{&quot;set_code&quot;:&quot;SBCB-EN001&quot;,&quot;set_rarity&quot;:&quot;Common&quot;,&quot;set_name&quot;:&quot;Speed Duel: Battle City Box&quot;,&quot;set_rarity_code&quot;:&quot;(C)&quot;,&quot;set_price&quot;:&quot;1.52&quot;},{&quot;set_code&quot;:&quot;SBCB-EN001&quot;,&quot;set_rarity&quot;:&quot;Secret Rare&quot;,&quot;set_name&quot;:&quot;Speed Duel: Battle City Box&quot;,&quot;set_rarity_code&quot;:&quot;(ScR)&quot;,&quot;set_price&quot;:&quot;7.3&quot;},{&quot;set_code&quot;:&quot;SDY-006&quot;,&quot;set_rarity&quot;:&quot;Ultra Rare&quot;,&quot;set_name&quot;:&quot;Starter Deck: Yugi&quot;,&quot;set_rarity_code&quot;:&quot;(UR)&quot;,&quot;set_price&quot;:&quot;14.79&quot;},{&quot;set_code&quot;:&quot;SDY-E005&quot;,&quot;set_rarity&quot;:&quot;Ultra Rare&quot;,&quot;set_name&quot;:&quot;Starter Deck: Yugi&quot;,&quot;set_rarity_code&quot;:&quot;(UR)&quot;,&quot;set_price&quot;:&quot;24.43&quot;},{&quot;set_code&quot;:&quot;SYE-001&quot;,&quot;set_rarity&quot;:&quot;Super Rare&quot;,&quot;set_name&quot;:&quot;Starter Deck: Yugi Evolution&quot;,&quot;set_rarity_code&quot;:&quot;(SR)&quot;,&quot;set_price&quot;:&quot;5.77&quot;},{&quot;set_code&quot;:&quot;YSYR-EN001&quot;,&quot;set_rarity&quot;:&quot;Common&quot;,&quot;set_name&quot;:&quot;Starter Deck: Yugi Reloaded&quot;,&quot;set_rarity_code&quot;:&quot;(C)&quot;,&quot;set_price&quot;:&quot;2.47&quot;},{&quot;set_code&quot;:&quot;YSYR-EN001&quot;,&quot;set_rarity&quot;:&quot;Ultimate Rare&quot;,&quot;set_name&quot;:&quot;Starter Deck: Yugi Reloaded&quot;,&quot;set_rarity_code&quot;:&quot;(UtR)&quot;,&quot;set_price&quot;:&quot;13.29&quot;},{&quot;set_code&quot;:&quot;SD6-EN003&quot;,&quot;set_rarity&quot;:&quot;Common&quot;,&quot;set_name&quot;:&quot;Structure Deck: Spellcaster&#39;s Judgment&quot;,&quot;set_rarity_code&quot;:&quot;(C)&quot;,&quot;set_price&quot;:&quot;2.78&quot;},{&quot;set_code&quot;:&quot;SDMY-EN010&quot;,&quot;set_rarity&quot;:&quot;Common&quot;,&quot;set_name&quot;:&quot;Structure Deck: Yugi Muto&quot;,&quot;set_rarity_code&quot;:&quot;(C)&quot;,&quot;set_price&quot;:&quot;5.73&quot;},{&quot;set_code&quot;:&quot;JMPS-EN003&quot;,&quot;set_rarity&quot;:&quot;Ultra Rare&quot;,&quot;set_name&quot;:&quot;WSJ Jump Pack Fall 2016 promotional card&quot;,&quot;set_rarity_code&quot;:&quot;(UR)&quot;,&quot;set_price&quot;:&quot;113.64&quot;},{&quot;set_code&quot;:&quot;DDS-002&quot;,&quot;set_rarity&quot;:&quot;Prismatic Secret Rare&quot;,&quot;set_name&quot;:&quot;Yu-Gi-Oh! Dark Duel Stories promotional cards&quot;,&quot;set_rarity_code&quot;:&quot;(PScR)&quot;,&quot;set_price&quot;:&quot;1672.85&quot;},{&quot;set_code&quot;:&quot;PCY-004&quot;,&quot;set_rarity&quot;:&quot;Prismatic Secret Rare&quot;,&quot;set_name&quot;:&quot;Yu-Gi-Oh! Power of Chaos: Yugi the Destiny promotional cards&quot;,&quot;set_rarity_code&quot;:&quot;(PScR)&quot;,&quot;set_price&quot;:&quot;68.29&quot;},{&quot;set_code&quot;:&quot;PCY-E004&quot;,&quot;set_rarity&quot;:&quot;Prismatic Secret Rare&quot;,&quot;set_name&quot;:&quot;Yu-Gi-Oh! Power of Chaos: Yugi the Destiny promotional cards&quot;,&quot;set_rarity_code&quot;:&quot;(PScR)&quot;,&quot;set_price&quot;:&quot;90.88&quot;},{&quot;set_code&quot;:&quot;MVP1-EN054&quot;,&quot;set_rarity&quot;:&quot;Ultra Rare&quot;,&quot;set_name&quot;:&quot;Yu-Gi-Oh! The Dark Side of Dimensions Movie Pack&quot;,&quot;set_rarity_code&quot;:&quot;(UR)&quot;,&quot;set_price&quot;:&quot;4.81&quot;},{&quot;set_code&quot;:&quot;MVP1-ENS54&quot;,&quot;set_rarity&quot;:&quot;Secret Rare&quot;,&quot;set_name&quot;:&quot;Yu-Gi-Oh! The Dark Side of Dimensions Movie Pack Secret Edition&quot;,&quot;set_rarity_code&quot;:&quot;(ScR)&quot;,&quot;set_price&quot;:&quot;7.47&quot;},{&quot;set_code&quot;:&quot;MVP1-ENSV3&quot;,&quot;set_rarity&quot;:&quot;Ultra Rare&quot;,&quot;set_name&quot;:&quot;Yu-Gi-Oh! The Dark Side of Dimensions Movie Pack Secret Edition&quot;,&quot;set_rarity_code&quot;:&quot;(UR)&quot;,&quot;set_price&quot;:&quot;4.17&quot;},{&quot;set_code&quot;:&quot;MVP1-ENSE3&quot;,&quot;set_rarity&quot;:&quot;Ultra Rare&quot;,&quot;set_name&quot;:&quot;Yu-Gi-Oh! The Dark Side of Dimensions Movie Pack Special Edition&quot;,&quot;set_rarity_code&quot;:&quot;(UR)&quot;,&quot;set_price&quot;:&quot;2.88&quot;},{&quot;set_code&quot;:&quot;MVP1-ENG54&quot;,&quot;set_rarity&quot;:&quot;Gold Rare&quot;,&quot;set_name&quot;:&quot;Yu-Gi-Oh! The Dark Side of Dimensions Movie Pack: Gold Edition&quot;,&quot;set_rarity_code&quot;:&quot;(GUR)&quot;,&quot;set_price&quot;:&quot;5.06&quot;},{&quot;set_code&quot;:&quot;MVP1-ENGV3&quot;,&quot;set_rarity&quot;:&quot;Gold Secret Rare&quot;,&quot;set_name&quot;:&quot;Yu-Gi-Oh! The Dark Side of Dimensions Movie Pack: Gold Edition&quot;,&quot;set_rarity_code&quot;:&quot;(GScR)&quot;,&quot;set_price&quot;:&quot;8.09&quot;},{&quot;set_code&quot;:&quot;YUCB-EN001&quot;,&quot;set_rarity&quot;:&quot;Ultra Rare&quot;,&quot;set_name&quot;:&quot;Yugi&#39;s Collector Box&quot;,&quot;set_rarity_code&quot;:&quot;(UR)&quot;,&quot;set_price&quot;:&quot;4.98&quot;},{&quot;set_code&quot;:&quot;YGLD-ENA03&quot;,&quot;set_rarity&quot;:&quot;Common&quot;,&quot;set_name&quot;:&quot;Yugi&#39;s Legendary Decks&quot;,&quot;set_rarity_code&quot;:&quot;(C)&quot;,&quot;set_price&quot;:&quot;0&quot;},{&quot;set_code&quot;:&quot;YGLD-ENB02&quot;,&quot;set_rarity&quot;:&quot;Ultra Rare&quot;,&quot;set_name&quot;:&quot;Yugi&#39;s Legendary Decks&quot;,&quot;set_rarity_code&quot;:&quot;(UR)&quot;,&quot;set_price&quot;:&quot;0&quot;},{&quot;set_code&quot;:&quot;YGLD-ENC09&quot;,&quot;set_rarity&quot;:&quot;Ultra Rare&quot;,&quot;set_name&quot;:&quot;Yugi&#39;s Legendary Decks&quot;,&quot;set_rarity_code&quot;:&quot;(UR)&quot;,&quot;set_price&quot;:&quot;0&quot;}],&quot;level&quot;:7,&quot;type&quot;:&quot;Normal Monster&quot;,&quot;archetype&quot;:&quot;Dark Magician&quot;,&quot;name&quot;:&quot;Dark Magician&quot;,&quot;atk&quot;:2500,&quot;card_images&quot;:[{&quot;image_url&quot;:&quot;https:\/\/storage.googleapis.com\/ygoprodeck.com\/pics\/46986421.jpg&quot;,&quot;image_url_small&quot;:&quot;https:\/\/storage.googleapis.com\/ygoprodeck.com\/pics_small\/46986421.jpg&quot;,&quot;id&quot;:46986421},{&quot;image_url&quot;:&quot;https:\/\/storage.googleapis.com\/ygoprodeck.com\/pics\/46986420.jpg&quot;,&quot;image_url_small&quot;:&quot;https:\/\/storage.googleapis.com\/ygoprodeck.com\/pics_small\/46986420.jpg&quot;,&quot;id&quot;:46986420},{&quot;image_url&quot;:&quot;https:\/\/storage.googleapis.com\/ygoprodeck.com\/pics\/46986414.jpg&quot;,&quot;image_url_small&quot;:&quot;https:\/\/storage.googleapis.com\/ygoprodeck.com\/pics_small\/46986414.jpg&quot;,&quot;id&quot;:46986414},{&quot;image_url&quot;:&quot;https:\/\/storage.googleapis.com\/ygoprodeck.com\/pics\/46986415.jpg&quot;,&quot;image_url_small&quot;:&quot;https:\/\/storage.googleapis.com\/ygoprodeck.com\/pics_small\/46986415.jpg&quot;,&quot;id&quot;:46986415},{&quot;image_url&quot;:&quot;https:\/\/storage.googleapis.com\/ygoprodeck.com\/pics\/46986416.jpg&quot;,&quot;image_url_small&quot;:&quot;https:\/\/storage.googleapis.com\/ygoprodeck.com\/pics_small\/46986416.jpg&quot;,&quot;id&quot;:46986416},{&quot;image_url&quot;:&quot;https:\/\/storage.googleapis.com\/ygoprodeck.com\/pics\/46986417.jpg&quot;,&quot;image_url_small&quot;:&quot;https:\/\/storage.googleapis.com\/ygoprodeck.com\/pics_small\/46986417.jpg&quot;,&quot;id&quot;:46986417},{&quot;image_url&quot;:&quot;https:\/\/storage.googleapis.com\/ygoprodeck.com\/pics\/46986418.jpg&quot;,&quot;image_url_small&quot;:&quot;https:\/\/storage.googleapis.com\/ygoprodeck.com\/pics_small\/46986418.jpg&quot;,&quot;id&quot;:46986418},{&quot;image_url&quot;:&quot;https:\/\/storage.googleapis.com\/ygoprodeck.com\/pics\/46986419.jpg&quot;,&quot;image_url_small&quot;:&quot;https:\/\/storage.googleapis.com\/ygoprodeck.com\/pics_small\/46986419.jpg&quot;,&quot;id&quot;:46986419},{&quot;image_url&quot;:&quot;https:\/\/storage.googleapis.com\/ygoprodeck.com\/pics\/36996508.jpg&quot;,&quot;image_url_small&quot;:&quot;https:\/\/storage.googleapis.com\/ygoprodeck.com\/pics_small\/36996508.jpg&quot;,&quot;id&quot;:36996508}],&quot;id&quot;:46986421,&quot;attribute&quot;:&quot;DARK&quot;,&quot;desc&quot;:&quot;The ultimate wizard in terms of attack and defense.&quot;}]}
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.22">
+      <div class="step-ref passed">22</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.23">
+      <div class="step-ref passed">23</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.data[0].id == 46986421</span>
+      </div>
+    </div>
+    <div class="time-cell passed">54</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.24">
+      <div class="step-ref passed">24</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.data[0].name == &quot;Dark Magician&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[4:26]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[4:26]</span>
+                <span class="scenario-name">Verificar o tipo das variaveis das cartas</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>1005</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[4:26]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[4:26]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def url_base = &#39;https://db.ygoprodeck.com/api/v7/cardinfo.php&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4">12:01:08.515 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.27">
+      <div class="step-ref passed">27</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url url_base</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.28">
+      <div class="step-ref passed">28</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>path &#39;?name=Dark_Magician&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">5</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.29">
+      <div class="step-ref passed">29</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">840</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.29">12:01:09.041 request:
+1 &gt; GET https://db.ygoprodeck.com/api/v7/cardinfo.php/?name=Dark_Magician
+1 &gt; Host: db.ygoprodeck.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.1)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+12:01:09.453 response time in milliseconds: 364
+1 &lt; 200
+1 &lt; Date: Thu, 25 Nov 2021 15:01:05 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Connection: keep-alive
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Access-Control-Allow-Methods: GET
+1 &lt; Access-Control-Allow-Headers: Content-Type, Authorization, X-Requested-With
+1 &lt; Vary: Accept-Encoding,User-Agent
+1 &lt; Last-Modified: Thu, 25 Nov 2021 14:47:26 GMT
+1 &lt; Cache-Control: max-age=10800
+1 &lt; CF-Cache-Status: HIT
+1 &lt; Age: 819
+1 &lt; Accept-Ranges: bytes
+1 &lt; Expect-CT: max-age=604800, report-uri=&quot;https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct&quot;
+1 &lt; Server: cloudflare
+1 &lt; CF-RAY: 6b3bc013fe486af4-GRU
+1 &lt; alt-svc: h3=&quot;:443&quot;; ma=86400, h3-29=&quot;:443&quot;; ma=86400, h3-28=&quot;:443&quot;; ma=86400, h3-27=&quot;:443&quot;; ma=86400
+{&quot;data&quot;:[{&quot;card_prices&quot;:[{&quot;coolstuffinc_price&quot;:&quot;4.99&quot;,&quot;tcgplayer_price&quot;:&quot;0.46&quot;,&quot;amazon_price&quot;:&quot;7.24&quot;,&quot;ebay_price&quot;:&quot;9.75&quot;,&quot;cardmarket_price&quot;:&quot;0.09&quot;}],&quot;def&quot;:2100,&quot;race&quot;:&quot;Spellcaster&quot;,&quot;card_sets&quot;:[{&quot;set_code&quot;:&quot;CT13-EN003&quot;,&quot;set_rarity&quot;:&quot;Ultra Rare&quot;,&quot;set_name&quot;:&quot;2016 Mega-Tins&quot;,&quot;set_rarity_code&quot;:&quot;(UR)&quot;,&quot;set_price&quot;:&quot;11.37&quot;},{&quot;set_code&quot;:&quot;CT14-EN001&quot;,&quot;set_rarity&quot;:&quot;Secret Rare&quot;,&quot;set_name&quot;:&quot;2017 Mega-Tins&quot;,&quot;set_rarity_code&quot;:&quot;(ScR)&quot;,&quot;set_price&quot;:&quot;6.77&quot;},{&quot;set_code&quot;:&quot;BPT-001&quot;,&quot;set_rarity&quot;:&quot;Secret Rare&quot;,&quot;set_name&quot;:&quot;Booster Pack Collectors Tins 2002&quot;,&quot;set_rarity_code&quot;:&quot;(ScR)&quot;,&quot;set_price&quot;:&quot;77.16&quot;},{&quot;set_code&quot;:&quot;BPT-007&quot;,&quot;set_rarity&quot;:&quot;Secret Rare&quot;,&quot;set_name&quot;:&quot;Collectible Tins 2003&quot;,&quot;set_rarity_code&quot;:&quot;(ScR)&quot;,&quot;set_price&quot;:&quot;19.51&quot;},{&quot;set_code&quot;:&quot;DB1-EN102&quot;,&quot;set_rarity&quot;:&quot;Ultra Rare&quot;,&quot;set_name&quot;:&quot;Dark Beginning 1&quot;,&quot;set_rarity_code&quot;:&quot;(UR)&quot;,&quot;set_price&quot;:&quot;25.12&quot;},{&quot;set_code&quot;:&quot;DLG1-EN004&quot;,&quot;set_rarity&quot;:&quot;Rare&quot;,&quot;set_name&quot;:&quot;Dark Legends&quot;,&quot;set_rarity_code&quot;:&quot;(R)&quot;,&quot;set_price&quot;:&quot;16.39&quot;},{&quot;set_code&quot;:&quot;DUPO-EN101&quot;,&quot;set_rarity&quot;:&quot;Ultra Rare&quot;,&quot;set_name&quot;:&quot;Duel Power&quot;,&quot;set_rarity_code&quot;:&quot;(UR)&quot;,&quot;set_price&quot;:&quot;4.32&quot;},{&quot;set_code&quot;:&quot;DTP1-EN002&quot;,&quot;set_rarity&quot;:&quot;Duel Terminal Normal Parallel Rare&quot;,&quot;set_name&quot;:&quot;Duel Terminal - Preview Wave 1&quot;,&quot;set_rarity_code&quot;:&quot;(DNPR)&quot;,&quot;set_price&quot;:&quot;0.00&quot;},{&quot;set_code&quot;:&quot;DTP1-EN002&quot;,&quot;set_rarity&quot;:&quot;Duel Terminal Rare Parallel Rare&quot;,&quot;set_name&quot;:&quot;Duel Terminal - Preview Wave 2&quot;,&quot;set_rarity_code&quot;:&quot;(DRPR)&quot;,&quot;set_price&quot;:&quot;0.00&quot;},{&quot;set_code&quot;:&quot;DT01-EN002&quot;,&quot;set_rarity&quot;:&quot;Duel Terminal Rare Parallel Rare&quot;,&quot;set_name&quot;:&quot;Duel Terminal 1&quot;,&quot;set_rarity_code&quot;:&quot;(DRPR)&quot;,&quot;set_price&quot;:&quot;18.56&quot;},{&quot;set_code&quot;:&quot;DL11-EN001&quot;,&quot;set_rarity&quot;:&quot;Rare&quot;,&quot;set_name&quot;:&quot;Duelist League 2 participation cards&quot;,&quot;set_rarity_code&quot;:&quot;(R)&quot;,&quot;set_price&quot;:&quot;679.42&quot;},{&quot;set_code&quot;:&quot;DPBC-EN008&quot;,&quot;set_rarity&quot;:&quot;Super Rare&quot;,&quot;set_name&quot;:&quot;Duelist Pack: Battle City&quot;,&quot;set_rarity_code&quot;:&quot;(SR)&quot;,&quot;set_price&quot;:&quot;6.69&quot;},{&quot;set_code&quot;:&quot;DPYG-EN001&quot;,&quot;set_rarity&quot;:&quot;Rare&quot;,&quot;set_name&quot;:&quot;Duelist Pack: Yugi&quot;,&quot;set_rarity_code&quot;:&quot;(R)&quot;,&quot;set_price&quot;:&quot;2.58&quot;},{&quot;set_code&quot;:&quot;DUSA-EN100&quot;,&quot;set_rarity&quot;:&quot;Ultra Rare&quot;,&quot;set_name&quot;:&quot;Duelist Saga&quot;,&quot;set_rarity_code&quot;:&quot;(UR)&quot;,&quot;set_price&quot;:&quot;9.84&quot;},{&quot;set_code&quot;:&quot;FL1-EN002&quot;,&quot;set_rarity&quot;:&quot;Secret Rare&quot;,&quot;set_name&quot;:&quot;Forbidden Legacy&quot;,&quot;set_rarity_code&quot;:&quot;(ScR)&quot;,&quot;set_price&quot;:&quot;17.9&quot;},{&quot;set_code&quot;:&quot;GFTP-EN128&quot;,&quot;set_rarity&quot;:&quot;Ghost Rare&quot;,&quot;set_name&quot;:&quot;Ghosts From the Past (set)&quot;,&quot;set_rarity_code&quot;:&quot;(GR)&quot;,&quot;set_price&quot;:&quot;717.85&quot;},{&quot;set_code&quot;:&quot;2021-EN001&quot;,&quot;set_rarity&quot;:&quot;Extra Secret Rare&quot;,&quot;set_name&quot;:&quot;KC Grand Tournament 2021 prize card&quot;,&quot;set_rarity_code&quot;:&quot;&quot;,&quot;set_price&quot;:&quot;0.00&quot;},{&quot;set_code&quot;:&quot;LOB-005&quot;,&quot;set_rarity&quot;:&quot;Ultra Rare&quot;,&quot;set_name&quot;:&quot;Legend of Blue Eyes White Dragon&quot;,&quot;set_rarity_code&quot;:&quot;(UR)&quot;,&quot;set_price&quot;:&quot;39.98&quot;},{&quot;set_code&quot;:&quot;LOB-E003&quot;,&quot;set_rarity&quot;:&quot;Ultra Rare&quot;,&quot;set_name&quot;:&quot;Legend of Blue Eyes White Dragon&quot;,&quot;set_rarity_code&quot;:&quot;(UR)&quot;,&quot;set_price&quot;:&quot;55.73&quot;},{&quot;set_code&quot;:&quot;LOB-EN005&quot;,&quot;set_rarity&quot;:&quot;Ultra Rare&quot;,&quot;set_name&quot;:&quot;Legend of Blue Eyes White Dragon&quot;,&quot;set_rarity_code&quot;:&quot;(UR)&quot;,&quot;set_price&quot;:&quot;60.17&quot;},{&quot;set_code&quot;:&quot;LC01-EN005&quot;,&quot;set_rarity&quot;:&quot;Ultra Rare&quot;,&quot;set_name&quot;:&quot;Legendary Collection&quot;,&quot;set_rarity_code&quot;:&quot;(UR)&quot;,&quot;set_price&quot;:&quot;5.63&quot;},{&quot;set_code&quot;:&quot;LCYW-EN001&quot;,&quot;set_rarity&quot;:&quot;Secret Rare&quot;,&quot;set_name&quot;:&quot;Legendary Collection 3: Yugi&#39;s World Mega Pack&quot;,&quot;set_rarity_code&quot;:&quot;(ScR)&quot;,&quot;set_price&quot;:&quot;16.89&quot;},{&quot;set_code&quot;:&quot;LDK2-ENY10&quot;,&quot;set_rarity&quot;:&quot;Common&quot;,&quot;set_name&quot;:&quot;Legendary Decks II&quot;,&quot;set_rarity_code&quot;:&quot;(C)&quot;,&quot;set_price&quot;:&quot;2.3&quot;},{&quot;set_code&quot;:&quot;LEDD-ENA01&quot;,&quot;set_rarity&quot;:&quot;Common&quot;,&quot;set_name&quot;:&quot;Legendary Dragon Decks&quot;,&quot;set_rarity_code&quot;:&quot;(C)&quot;,&quot;set_price&quot;:&quot;1.71&quot;},{&quot;set_code&quot;:&quot;MAGO-EN002&quot;,&quot;set_rarity&quot;:&quot;Premium Gold Rare&quot;,&quot;set_name&quot;:&quot;Maximum Gold&quot;,&quot;set_rarity_code&quot;:&quot;(PG)&quot;,&quot;set_price&quot;:&quot;13.59&quot;},{&quot;set_code&quot;:&quot;RP01-EN003&quot;,&quot;set_rarity&quot;:&quot;Ultra Rare&quot;,&quot;set_name&quot;:&quot;Retro Pack&quot;,&quot;set_rarity_code&quot;:&quot;(UR)&quot;,&quot;set_price&quot;:&quot;536.88&quot;},{&quot;set_code&quot;:&quot;JUMP-EN049&quot;,&quot;set_rarity&quot;:&quot;Ultra Rare&quot;,&quot;set_name&quot;:&quot;Shonen Jump Vol. 9, Issue 4 promotional card&quot;,&quot;set_rarity_code&quot;:&quot;(UR)&quot;,&quot;set_price&quot;:&quot;109.57&quot;},{&quot;set_code&quot;:&quot;SS01-ENA01&quot;,&quot;set_rarity&quot;:&quot;Common&quot;,&quot;set_name&quot;:&quot;Speed Duel Starter Decks: Destiny Masters&quot;,&quot;set_rarity_code&quot;:&quot;(C)&quot;,&quot;set_price&quot;:&quot;1.49&quot;},{&quot;set_code&quot;:&quot;SS04-ENA01&quot;,&quot;set_rarity&quot;:&quot;Common&quot;,&quot;set_name&quot;:&quot;Speed Duel Starter Decks: Match of the Millennium&quot;,&quot;set_rarity_code&quot;:&quot;(C)&quot;,&quot;set_price&quot;:&quot;1.63&quot;},{&quot;set_code&quot;:&quot;STP1-EN001&quot;,&quot;set_rarity&quot;:&quot;Ultra Rare&quot;,&quot;set_name&quot;:&quot;Speed Duel Tournament Pack 1&quot;,&quot;set_rarity_code&quot;:&quot;(UR)&quot;,&quot;set_price&quot;:&quot;109.6&quot;},{&quot;set_code&quot;:&quot;SBCB-EN001&quot;,&quot;set_rarity&quot;:&quot;Common&quot;,&quot;set_name&quot;:&quot;Speed Duel: Battle City Box&quot;,&quot;set_rarity_code&quot;:&quot;(C)&quot;,&quot;set_price&quot;:&quot;1.52&quot;},{&quot;set_code&quot;:&quot;SBCB-EN001&quot;,&quot;set_rarity&quot;:&quot;Secret Rare&quot;,&quot;set_name&quot;:&quot;Speed Duel: Battle City Box&quot;,&quot;set_rarity_code&quot;:&quot;(ScR)&quot;,&quot;set_price&quot;:&quot;7.3&quot;},{&quot;set_code&quot;:&quot;SDY-006&quot;,&quot;set_rarity&quot;:&quot;Ultra Rare&quot;,&quot;set_name&quot;:&quot;Starter Deck: Yugi&quot;,&quot;set_rarity_code&quot;:&quot;(UR)&quot;,&quot;set_price&quot;:&quot;14.79&quot;},{&quot;set_code&quot;:&quot;SDY-E005&quot;,&quot;set_rarity&quot;:&quot;Ultra Rare&quot;,&quot;set_name&quot;:&quot;Starter Deck: Yugi&quot;,&quot;set_rarity_code&quot;:&quot;(UR)&quot;,&quot;set_price&quot;:&quot;24.43&quot;},{&quot;set_code&quot;:&quot;SYE-001&quot;,&quot;set_rarity&quot;:&quot;Super Rare&quot;,&quot;set_name&quot;:&quot;Starter Deck: Yugi Evolution&quot;,&quot;set_rarity_code&quot;:&quot;(SR)&quot;,&quot;set_price&quot;:&quot;5.77&quot;},{&quot;set_code&quot;:&quot;YSYR-EN001&quot;,&quot;set_rarity&quot;:&quot;Common&quot;,&quot;set_name&quot;:&quot;Starter Deck: Yugi Reloaded&quot;,&quot;set_rarity_code&quot;:&quot;(C)&quot;,&quot;set_price&quot;:&quot;2.47&quot;},{&quot;set_code&quot;:&quot;YSYR-EN001&quot;,&quot;set_rarity&quot;:&quot;Ultimate Rare&quot;,&quot;set_name&quot;:&quot;Starter Deck: Yugi Reloaded&quot;,&quot;set_rarity_code&quot;:&quot;(UtR)&quot;,&quot;set_price&quot;:&quot;13.29&quot;},{&quot;set_code&quot;:&quot;SD6-EN003&quot;,&quot;set_rarity&quot;:&quot;Common&quot;,&quot;set_name&quot;:&quot;Structure Deck: Spellcaster&#39;s Judgment&quot;,&quot;set_rarity_code&quot;:&quot;(C)&quot;,&quot;set_price&quot;:&quot;2.78&quot;},{&quot;set_code&quot;:&quot;SDMY-EN010&quot;,&quot;set_rarity&quot;:&quot;Common&quot;,&quot;set_name&quot;:&quot;Structure Deck: Yugi Muto&quot;,&quot;set_rarity_code&quot;:&quot;(C)&quot;,&quot;set_price&quot;:&quot;5.73&quot;},{&quot;set_code&quot;:&quot;JMPS-EN003&quot;,&quot;set_rarity&quot;:&quot;Ultra Rare&quot;,&quot;set_name&quot;:&quot;WSJ Jump Pack Fall 2016 promotional card&quot;,&quot;set_rarity_code&quot;:&quot;(UR)&quot;,&quot;set_price&quot;:&quot;113.64&quot;},{&quot;set_code&quot;:&quot;DDS-002&quot;,&quot;set_rarity&quot;:&quot;Prismatic Secret Rare&quot;,&quot;set_name&quot;:&quot;Yu-Gi-Oh! Dark Duel Stories promotional cards&quot;,&quot;set_rarity_code&quot;:&quot;(PScR)&quot;,&quot;set_price&quot;:&quot;1672.85&quot;},{&quot;set_code&quot;:&quot;PCY-004&quot;,&quot;set_rarity&quot;:&quot;Prismatic Secret Rare&quot;,&quot;set_name&quot;:&quot;Yu-Gi-Oh! Power of Chaos: Yugi the Destiny promotional cards&quot;,&quot;set_rarity_code&quot;:&quot;(PScR)&quot;,&quot;set_price&quot;:&quot;68.29&quot;},{&quot;set_code&quot;:&quot;PCY-E004&quot;,&quot;set_rarity&quot;:&quot;Prismatic Secret Rare&quot;,&quot;set_name&quot;:&quot;Yu-Gi-Oh! Power of Chaos: Yugi the Destiny promotional cards&quot;,&quot;set_rarity_code&quot;:&quot;(PScR)&quot;,&quot;set_price&quot;:&quot;90.88&quot;},{&quot;set_code&quot;:&quot;MVP1-EN054&quot;,&quot;set_rarity&quot;:&quot;Ultra Rare&quot;,&quot;set_name&quot;:&quot;Yu-Gi-Oh! The Dark Side of Dimensions Movie Pack&quot;,&quot;set_rarity_code&quot;:&quot;(UR)&quot;,&quot;set_price&quot;:&quot;4.81&quot;},{&quot;set_code&quot;:&quot;MVP1-ENS54&quot;,&quot;set_rarity&quot;:&quot;Secret Rare&quot;,&quot;set_name&quot;:&quot;Yu-Gi-Oh! The Dark Side of Dimensions Movie Pack Secret Edition&quot;,&quot;set_rarity_code&quot;:&quot;(ScR)&quot;,&quot;set_price&quot;:&quot;7.47&quot;},{&quot;set_code&quot;:&quot;MVP1-ENSV3&quot;,&quot;set_rarity&quot;:&quot;Ultra Rare&quot;,&quot;set_name&quot;:&quot;Yu-Gi-Oh! The Dark Side of Dimensions Movie Pack Secret Edition&quot;,&quot;set_rarity_code&quot;:&quot;(UR)&quot;,&quot;set_price&quot;:&quot;4.17&quot;},{&quot;set_code&quot;:&quot;MVP1-ENSE3&quot;,&quot;set_rarity&quot;:&quot;Ultra Rare&quot;,&quot;set_name&quot;:&quot;Yu-Gi-Oh! The Dark Side of Dimensions Movie Pack Special Edition&quot;,&quot;set_rarity_code&quot;:&quot;(UR)&quot;,&quot;set_price&quot;:&quot;2.88&quot;},{&quot;set_code&quot;:&quot;MVP1-ENG54&quot;,&quot;set_rarity&quot;:&quot;Gold Rare&quot;,&quot;set_name&quot;:&quot;Yu-Gi-Oh! The Dark Side of Dimensions Movie Pack: Gold Edition&quot;,&quot;set_rarity_code&quot;:&quot;(GUR)&quot;,&quot;set_price&quot;:&quot;5.06&quot;},{&quot;set_code&quot;:&quot;MVP1-ENGV3&quot;,&quot;set_rarity&quot;:&quot;Gold Secret Rare&quot;,&quot;set_name&quot;:&quot;Yu-Gi-Oh! The Dark Side of Dimensions Movie Pack: Gold Edition&quot;,&quot;set_rarity_code&quot;:&quot;(GScR)&quot;,&quot;set_price&quot;:&quot;8.09&quot;},{&quot;set_code&quot;:&quot;YUCB-EN001&quot;,&quot;set_rarity&quot;:&quot;Ultra Rare&quot;,&quot;set_name&quot;:&quot;Yugi&#39;s Collector Box&quot;,&quot;set_rarity_code&quot;:&quot;(UR)&quot;,&quot;set_price&quot;:&quot;4.98&quot;},{&quot;set_code&quot;:&quot;YGLD-ENA03&quot;,&quot;set_rarity&quot;:&quot;Common&quot;,&quot;set_name&quot;:&quot;Yugi&#39;s Legendary Decks&quot;,&quot;set_rarity_code&quot;:&quot;(C)&quot;,&quot;set_price&quot;:&quot;0&quot;},{&quot;set_code&quot;:&quot;YGLD-ENB02&quot;,&quot;set_rarity&quot;:&quot;Ultra Rare&quot;,&quot;set_name&quot;:&quot;Yugi&#39;s Legendary Decks&quot;,&quot;set_rarity_code&quot;:&quot;(UR)&quot;,&quot;set_price&quot;:&quot;0&quot;},{&quot;set_code&quot;:&quot;YGLD-ENC09&quot;,&quot;set_rarity&quot;:&quot;Ultra Rare&quot;,&quot;set_name&quot;:&quot;Yugi&#39;s Legendary Decks&quot;,&quot;set_rarity_code&quot;:&quot;(UR)&quot;,&quot;set_price&quot;:&quot;0&quot;}],&quot;level&quot;:7,&quot;type&quot;:&quot;Normal Monster&quot;,&quot;archetype&quot;:&quot;Dark Magician&quot;,&quot;name&quot;:&quot;Dark Magician&quot;,&quot;atk&quot;:2500,&quot;card_images&quot;:[{&quot;image_url&quot;:&quot;https:\/\/storage.googleapis.com\/ygoprodeck.com\/pics\/46986421.jpg&quot;,&quot;image_url_small&quot;:&quot;https:\/\/storage.googleapis.com\/ygoprodeck.com\/pics_small\/46986421.jpg&quot;,&quot;id&quot;:46986421},{&quot;image_url&quot;:&quot;https:\/\/storage.googleapis.com\/ygoprodeck.com\/pics\/46986420.jpg&quot;,&quot;image_url_small&quot;:&quot;https:\/\/storage.googleapis.com\/ygoprodeck.com\/pics_small\/46986420.jpg&quot;,&quot;id&quot;:46986420},{&quot;image_url&quot;:&quot;https:\/\/storage.googleapis.com\/ygoprodeck.com\/pics\/46986414.jpg&quot;,&quot;image_url_small&quot;:&quot;https:\/\/storage.googleapis.com\/ygoprodeck.com\/pics_small\/46986414.jpg&quot;,&quot;id&quot;:46986414},{&quot;image_url&quot;:&quot;https:\/\/storage.googleapis.com\/ygoprodeck.com\/pics\/46986415.jpg&quot;,&quot;image_url_small&quot;:&quot;https:\/\/storage.googleapis.com\/ygoprodeck.com\/pics_small\/46986415.jpg&quot;,&quot;id&quot;:46986415},{&quot;image_url&quot;:&quot;https:\/\/storage.googleapis.com\/ygoprodeck.com\/pics\/46986416.jpg&quot;,&quot;image_url_small&quot;:&quot;https:\/\/storage.googleapis.com\/ygoprodeck.com\/pics_small\/46986416.jpg&quot;,&quot;id&quot;:46986416},{&quot;image_url&quot;:&quot;https:\/\/storage.googleapis.com\/ygoprodeck.com\/pics\/46986417.jpg&quot;,&quot;image_url_small&quot;:&quot;https:\/\/storage.googleapis.com\/ygoprodeck.com\/pics_small\/46986417.jpg&quot;,&quot;id&quot;:46986417},{&quot;image_url&quot;:&quot;https:\/\/storage.googleapis.com\/ygoprodeck.com\/pics\/46986418.jpg&quot;,&quot;image_url_small&quot;:&quot;https:\/\/storage.googleapis.com\/ygoprodeck.com\/pics_small\/46986418.jpg&quot;,&quot;id&quot;:46986418},{&quot;image_url&quot;:&quot;https:\/\/storage.googleapis.com\/ygoprodeck.com\/pics\/46986419.jpg&quot;,&quot;image_url_small&quot;:&quot;https:\/\/storage.googleapis.com\/ygoprodeck.com\/pics_small\/46986419.jpg&quot;,&quot;id&quot;:46986419},{&quot;image_url&quot;:&quot;https:\/\/storage.googleapis.com\/ygoprodeck.com\/pics\/36996508.jpg&quot;,&quot;image_url_small&quot;:&quot;https:\/\/storage.googleapis.com\/ygoprodeck.com\/pics_small\/36996508.jpg&quot;,&quot;id&quot;:36996508}],&quot;id&quot;:46986421,&quot;attribute&quot;:&quot;DARK&quot;,&quot;desc&quot;:&quot;The ultimate wizard in terms of attack and defense.&quot;}]}
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.30">
+      <div class="step-ref passed">30</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.31">
+      <div class="step-ref passed">31</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.data[0].card_sets ==&#39;#[]&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">73</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.32">
+      <div class="step-ref passed">32</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match each response.data[0].card_sets contains { set_name: &quot;#string&quot;, set_code: &quot;#string&quot;, set_rarity: &quot;#string&quot;, set_rarity_code: &quot;#string&quot;, set_price: &quot;#string&quot; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">86</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[5:34]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[5:34]</span>
+                <span class="scenario-name">Verificar se a carta tem valor maior ou igual a &quot;0&quot;</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>1193</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[5:34]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[5:34]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def url_base = &#39;https://db.ygoprodeck.com/api/v7/cardinfo.php&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4">12:01:08.528 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.35">
+      <div class="step-ref passed">35</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url url_base</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.36">
+      <div class="step-ref passed">36</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>path &#39;?name=Dark_Magician&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">10</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.37">
+      <div class="step-ref passed">37</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">867</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.37">12:01:09.037 request:
+1 &gt; GET https://db.ygoprodeck.com/api/v7/cardinfo.php/?name=Dark_Magician
+1 &gt; Host: db.ygoprodeck.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.1)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+12:01:09.484 response time in milliseconds: 368
+1 &lt; 200
+1 &lt; Date: Thu, 25 Nov 2021 15:01:05 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Connection: keep-alive
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Access-Control-Allow-Methods: GET
+1 &lt; Access-Control-Allow-Headers: Content-Type, Authorization, X-Requested-With
+1 &lt; Vary: Accept-Encoding,User-Agent
+1 &lt; Last-Modified: Thu, 25 Nov 2021 14:47:26 GMT
+1 &lt; Cache-Control: max-age=10800
+1 &lt; CF-Cache-Status: HIT
+1 &lt; Age: 819
+1 &lt; Accept-Ranges: bytes
+1 &lt; Expect-CT: max-age=604800, report-uri=&quot;https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct&quot;
+1 &lt; Server: cloudflare
+1 &lt; CF-RAY: 6b3bc013fa5cf677-GRU
+1 &lt; alt-svc: h3=&quot;:443&quot;; ma=86400, h3-29=&quot;:443&quot;; ma=86400, h3-28=&quot;:443&quot;; ma=86400, h3-27=&quot;:443&quot;; ma=86400
+{&quot;data&quot;:[{&quot;card_prices&quot;:[{&quot;coolstuffinc_price&quot;:&quot;4.99&quot;,&quot;tcgplayer_price&quot;:&quot;0.46&quot;,&quot;amazon_price&quot;:&quot;7.24&quot;,&quot;ebay_price&quot;:&quot;9.75&quot;,&quot;cardmarket_price&quot;:&quot;0.09&quot;}],&quot;def&quot;:2100,&quot;race&quot;:&quot;Spellcaster&quot;,&quot;card_sets&quot;:[{&quot;set_code&quot;:&quot;CT13-EN003&quot;,&quot;set_rarity&quot;:&quot;Ultra Rare&quot;,&quot;set_name&quot;:&quot;2016 Mega-Tins&quot;,&quot;set_rarity_code&quot;:&quot;(UR)&quot;,&quot;set_price&quot;:&quot;11.37&quot;},{&quot;set_code&quot;:&quot;CT14-EN001&quot;,&quot;set_rarity&quot;:&quot;Secret Rare&quot;,&quot;set_name&quot;:&quot;2017 Mega-Tins&quot;,&quot;set_rarity_code&quot;:&quot;(ScR)&quot;,&quot;set_price&quot;:&quot;6.77&quot;},{&quot;set_code&quot;:&quot;BPT-001&quot;,&quot;set_rarity&quot;:&quot;Secret Rare&quot;,&quot;set_name&quot;:&quot;Booster Pack Collectors Tins 2002&quot;,&quot;set_rarity_code&quot;:&quot;(ScR)&quot;,&quot;set_price&quot;:&quot;77.16&quot;},{&quot;set_code&quot;:&quot;BPT-007&quot;,&quot;set_rarity&quot;:&quot;Secret Rare&quot;,&quot;set_name&quot;:&quot;Collectible Tins 2003&quot;,&quot;set_rarity_code&quot;:&quot;(ScR)&quot;,&quot;set_price&quot;:&quot;19.51&quot;},{&quot;set_code&quot;:&quot;DB1-EN102&quot;,&quot;set_rarity&quot;:&quot;Ultra Rare&quot;,&quot;set_name&quot;:&quot;Dark Beginning 1&quot;,&quot;set_rarity_code&quot;:&quot;(UR)&quot;,&quot;set_price&quot;:&quot;25.12&quot;},{&quot;set_code&quot;:&quot;DLG1-EN004&quot;,&quot;set_rarity&quot;:&quot;Rare&quot;,&quot;set_name&quot;:&quot;Dark Legends&quot;,&quot;set_rarity_code&quot;:&quot;(R)&quot;,&quot;set_price&quot;:&quot;16.39&quot;},{&quot;set_code&quot;:&quot;DUPO-EN101&quot;,&quot;set_rarity&quot;:&quot;Ultra Rare&quot;,&quot;set_name&quot;:&quot;Duel Power&quot;,&quot;set_rarity_code&quot;:&quot;(UR)&quot;,&quot;set_price&quot;:&quot;4.32&quot;},{&quot;set_code&quot;:&quot;DTP1-EN002&quot;,&quot;set_rarity&quot;:&quot;Duel Terminal Normal Parallel Rare&quot;,&quot;set_name&quot;:&quot;Duel Terminal - Preview Wave 1&quot;,&quot;set_rarity_code&quot;:&quot;(DNPR)&quot;,&quot;set_price&quot;:&quot;0.00&quot;},{&quot;set_code&quot;:&quot;DTP1-EN002&quot;,&quot;set_rarity&quot;:&quot;Duel Terminal Rare Parallel Rare&quot;,&quot;set_name&quot;:&quot;Duel Terminal - Preview Wave 2&quot;,&quot;set_rarity_code&quot;:&quot;(DRPR)&quot;,&quot;set_price&quot;:&quot;0.00&quot;},{&quot;set_code&quot;:&quot;DT01-EN002&quot;,&quot;set_rarity&quot;:&quot;Duel Terminal Rare Parallel Rare&quot;,&quot;set_name&quot;:&quot;Duel Terminal 1&quot;,&quot;set_rarity_code&quot;:&quot;(DRPR)&quot;,&quot;set_price&quot;:&quot;18.56&quot;},{&quot;set_code&quot;:&quot;DL11-EN001&quot;,&quot;set_rarity&quot;:&quot;Rare&quot;,&quot;set_name&quot;:&quot;Duelist League 2 participation cards&quot;,&quot;set_rarity_code&quot;:&quot;(R)&quot;,&quot;set_price&quot;:&quot;679.42&quot;},{&quot;set_code&quot;:&quot;DPBC-EN008&quot;,&quot;set_rarity&quot;:&quot;Super Rare&quot;,&quot;set_name&quot;:&quot;Duelist Pack: Battle City&quot;,&quot;set_rarity_code&quot;:&quot;(SR)&quot;,&quot;set_price&quot;:&quot;6.69&quot;},{&quot;set_code&quot;:&quot;DPYG-EN001&quot;,&quot;set_rarity&quot;:&quot;Rare&quot;,&quot;set_name&quot;:&quot;Duelist Pack: Yugi&quot;,&quot;set_rarity_code&quot;:&quot;(R)&quot;,&quot;set_price&quot;:&quot;2.58&quot;},{&quot;set_code&quot;:&quot;DUSA-EN100&quot;,&quot;set_rarity&quot;:&quot;Ultra Rare&quot;,&quot;set_name&quot;:&quot;Duelist Saga&quot;,&quot;set_rarity_code&quot;:&quot;(UR)&quot;,&quot;set_price&quot;:&quot;9.84&quot;},{&quot;set_code&quot;:&quot;FL1-EN002&quot;,&quot;set_rarity&quot;:&quot;Secret Rare&quot;,&quot;set_name&quot;:&quot;Forbidden Legacy&quot;,&quot;set_rarity_code&quot;:&quot;(ScR)&quot;,&quot;set_price&quot;:&quot;17.9&quot;},{&quot;set_code&quot;:&quot;GFTP-EN128&quot;,&quot;set_rarity&quot;:&quot;Ghost Rare&quot;,&quot;set_name&quot;:&quot;Ghosts From the Past (set)&quot;,&quot;set_rarity_code&quot;:&quot;(GR)&quot;,&quot;set_price&quot;:&quot;717.85&quot;},{&quot;set_code&quot;:&quot;2021-EN001&quot;,&quot;set_rarity&quot;:&quot;Extra Secret Rare&quot;,&quot;set_name&quot;:&quot;KC Grand Tournament 2021 prize card&quot;,&quot;set_rarity_code&quot;:&quot;&quot;,&quot;set_price&quot;:&quot;0.00&quot;},{&quot;set_code&quot;:&quot;LOB-005&quot;,&quot;set_rarity&quot;:&quot;Ultra Rare&quot;,&quot;set_name&quot;:&quot;Legend of Blue Eyes White Dragon&quot;,&quot;set_rarity_code&quot;:&quot;(UR)&quot;,&quot;set_price&quot;:&quot;39.98&quot;},{&quot;set_code&quot;:&quot;LOB-E003&quot;,&quot;set_rarity&quot;:&quot;Ultra Rare&quot;,&quot;set_name&quot;:&quot;Legend of Blue Eyes White Dragon&quot;,&quot;set_rarity_code&quot;:&quot;(UR)&quot;,&quot;set_price&quot;:&quot;55.73&quot;},{&quot;set_code&quot;:&quot;LOB-EN005&quot;,&quot;set_rarity&quot;:&quot;Ultra Rare&quot;,&quot;set_name&quot;:&quot;Legend of Blue Eyes White Dragon&quot;,&quot;set_rarity_code&quot;:&quot;(UR)&quot;,&quot;set_price&quot;:&quot;60.17&quot;},{&quot;set_code&quot;:&quot;LC01-EN005&quot;,&quot;set_rarity&quot;:&quot;Ultra Rare&quot;,&quot;set_name&quot;:&quot;Legendary Collection&quot;,&quot;set_rarity_code&quot;:&quot;(UR)&quot;,&quot;set_price&quot;:&quot;5.63&quot;},{&quot;set_code&quot;:&quot;LCYW-EN001&quot;,&quot;set_rarity&quot;:&quot;Secret Rare&quot;,&quot;set_name&quot;:&quot;Legendary Collection 3: Yugi&#39;s World Mega Pack&quot;,&quot;set_rarity_code&quot;:&quot;(ScR)&quot;,&quot;set_price&quot;:&quot;16.89&quot;},{&quot;set_code&quot;:&quot;LDK2-ENY10&quot;,&quot;set_rarity&quot;:&quot;Common&quot;,&quot;set_name&quot;:&quot;Legendary Decks II&quot;,&quot;set_rarity_code&quot;:&quot;(C)&quot;,&quot;set_price&quot;:&quot;2.3&quot;},{&quot;set_code&quot;:&quot;LEDD-ENA01&quot;,&quot;set_rarity&quot;:&quot;Common&quot;,&quot;set_name&quot;:&quot;Legendary Dragon Decks&quot;,&quot;set_rarity_code&quot;:&quot;(C)&quot;,&quot;set_price&quot;:&quot;1.71&quot;},{&quot;set_code&quot;:&quot;MAGO-EN002&quot;,&quot;set_rarity&quot;:&quot;Premium Gold Rare&quot;,&quot;set_name&quot;:&quot;Maximum Gold&quot;,&quot;set_rarity_code&quot;:&quot;(PG)&quot;,&quot;set_price&quot;:&quot;13.59&quot;},{&quot;set_code&quot;:&quot;RP01-EN003&quot;,&quot;set_rarity&quot;:&quot;Ultra Rare&quot;,&quot;set_name&quot;:&quot;Retro Pack&quot;,&quot;set_rarity_code&quot;:&quot;(UR)&quot;,&quot;set_price&quot;:&quot;536.88&quot;},{&quot;set_code&quot;:&quot;JUMP-EN049&quot;,&quot;set_rarity&quot;:&quot;Ultra Rare&quot;,&quot;set_name&quot;:&quot;Shonen Jump Vol. 9, Issue 4 promotional card&quot;,&quot;set_rarity_code&quot;:&quot;(UR)&quot;,&quot;set_price&quot;:&quot;109.57&quot;},{&quot;set_code&quot;:&quot;SS01-ENA01&quot;,&quot;set_rarity&quot;:&quot;Common&quot;,&quot;set_name&quot;:&quot;Speed Duel Starter Decks: Destiny Masters&quot;,&quot;set_rarity_code&quot;:&quot;(C)&quot;,&quot;set_price&quot;:&quot;1.49&quot;},{&quot;set_code&quot;:&quot;SS04-ENA01&quot;,&quot;set_rarity&quot;:&quot;Common&quot;,&quot;set_name&quot;:&quot;Speed Duel Starter Decks: Match of the Millennium&quot;,&quot;set_rarity_code&quot;:&quot;(C)&quot;,&quot;set_price&quot;:&quot;1.63&quot;},{&quot;set_code&quot;:&quot;STP1-EN001&quot;,&quot;set_rarity&quot;:&quot;Ultra Rare&quot;,&quot;set_name&quot;:&quot;Speed Duel Tournament Pack 1&quot;,&quot;set_rarity_code&quot;:&quot;(UR)&quot;,&quot;set_price&quot;:&quot;109.6&quot;},{&quot;set_code&quot;:&quot;SBCB-EN001&quot;,&quot;set_rarity&quot;:&quot;Common&quot;,&quot;set_name&quot;:&quot;Speed Duel: Battle City Box&quot;,&quot;set_rarity_code&quot;:&quot;(C)&quot;,&quot;set_price&quot;:&quot;1.52&quot;},{&quot;set_code&quot;:&quot;SBCB-EN001&quot;,&quot;set_rarity&quot;:&quot;Secret Rare&quot;,&quot;set_name&quot;:&quot;Speed Duel: Battle City Box&quot;,&quot;set_rarity_code&quot;:&quot;(ScR)&quot;,&quot;set_price&quot;:&quot;7.3&quot;},{&quot;set_code&quot;:&quot;SDY-006&quot;,&quot;set_rarity&quot;:&quot;Ultra Rare&quot;,&quot;set_name&quot;:&quot;Starter Deck: Yugi&quot;,&quot;set_rarity_code&quot;:&quot;(UR)&quot;,&quot;set_price&quot;:&quot;14.79&quot;},{&quot;set_code&quot;:&quot;SDY-E005&quot;,&quot;set_rarity&quot;:&quot;Ultra Rare&quot;,&quot;set_name&quot;:&quot;Starter Deck: Yugi&quot;,&quot;set_rarity_code&quot;:&quot;(UR)&quot;,&quot;set_price&quot;:&quot;24.43&quot;},{&quot;set_code&quot;:&quot;SYE-001&quot;,&quot;set_rarity&quot;:&quot;Super Rare&quot;,&quot;set_name&quot;:&quot;Starter Deck: Yugi Evolution&quot;,&quot;set_rarity_code&quot;:&quot;(SR)&quot;,&quot;set_price&quot;:&quot;5.77&quot;},{&quot;set_code&quot;:&quot;YSYR-EN001&quot;,&quot;set_rarity&quot;:&quot;Common&quot;,&quot;set_name&quot;:&quot;Starter Deck: Yugi Reloaded&quot;,&quot;set_rarity_code&quot;:&quot;(C)&quot;,&quot;set_price&quot;:&quot;2.47&quot;},{&quot;set_code&quot;:&quot;YSYR-EN001&quot;,&quot;set_rarity&quot;:&quot;Ultimate Rare&quot;,&quot;set_name&quot;:&quot;Starter Deck: Yugi Reloaded&quot;,&quot;set_rarity_code&quot;:&quot;(UtR)&quot;,&quot;set_price&quot;:&quot;13.29&quot;},{&quot;set_code&quot;:&quot;SD6-EN003&quot;,&quot;set_rarity&quot;:&quot;Common&quot;,&quot;set_name&quot;:&quot;Structure Deck: Spellcaster&#39;s Judgment&quot;,&quot;set_rarity_code&quot;:&quot;(C)&quot;,&quot;set_price&quot;:&quot;2.78&quot;},{&quot;set_code&quot;:&quot;SDMY-EN010&quot;,&quot;set_rarity&quot;:&quot;Common&quot;,&quot;set_name&quot;:&quot;Structure Deck: Yugi Muto&quot;,&quot;set_rarity_code&quot;:&quot;(C)&quot;,&quot;set_price&quot;:&quot;5.73&quot;},{&quot;set_code&quot;:&quot;JMPS-EN003&quot;,&quot;set_rarity&quot;:&quot;Ultra Rare&quot;,&quot;set_name&quot;:&quot;WSJ Jump Pack Fall 2016 promotional card&quot;,&quot;set_rarity_code&quot;:&quot;(UR)&quot;,&quot;set_price&quot;:&quot;113.64&quot;},{&quot;set_code&quot;:&quot;DDS-002&quot;,&quot;set_rarity&quot;:&quot;Prismatic Secret Rare&quot;,&quot;set_name&quot;:&quot;Yu-Gi-Oh! Dark Duel Stories promotional cards&quot;,&quot;set_rarity_code&quot;:&quot;(PScR)&quot;,&quot;set_price&quot;:&quot;1672.85&quot;},{&quot;set_code&quot;:&quot;PCY-004&quot;,&quot;set_rarity&quot;:&quot;Prismatic Secret Rare&quot;,&quot;set_name&quot;:&quot;Yu-Gi-Oh! Power of Chaos: Yugi the Destiny promotional cards&quot;,&quot;set_rarity_code&quot;:&quot;(PScR)&quot;,&quot;set_price&quot;:&quot;68.29&quot;},{&quot;set_code&quot;:&quot;PCY-E004&quot;,&quot;set_rarity&quot;:&quot;Prismatic Secret Rare&quot;,&quot;set_name&quot;:&quot;Yu-Gi-Oh! Power of Chaos: Yugi the Destiny promotional cards&quot;,&quot;set_rarity_code&quot;:&quot;(PScR)&quot;,&quot;set_price&quot;:&quot;90.88&quot;},{&quot;set_code&quot;:&quot;MVP1-EN054&quot;,&quot;set_rarity&quot;:&quot;Ultra Rare&quot;,&quot;set_name&quot;:&quot;Yu-Gi-Oh! The Dark Side of Dimensions Movie Pack&quot;,&quot;set_rarity_code&quot;:&quot;(UR)&quot;,&quot;set_price&quot;:&quot;4.81&quot;},{&quot;set_code&quot;:&quot;MVP1-ENS54&quot;,&quot;set_rarity&quot;:&quot;Secret Rare&quot;,&quot;set_name&quot;:&quot;Yu-Gi-Oh! The Dark Side of Dimensions Movie Pack Secret Edition&quot;,&quot;set_rarity_code&quot;:&quot;(ScR)&quot;,&quot;set_price&quot;:&quot;7.47&quot;},{&quot;set_code&quot;:&quot;MVP1-ENSV3&quot;,&quot;set_rarity&quot;:&quot;Ultra Rare&quot;,&quot;set_name&quot;:&quot;Yu-Gi-Oh! The Dark Side of Dimensions Movie Pack Secret Edition&quot;,&quot;set_rarity_code&quot;:&quot;(UR)&quot;,&quot;set_price&quot;:&quot;4.17&quot;},{&quot;set_code&quot;:&quot;MVP1-ENSE3&quot;,&quot;set_rarity&quot;:&quot;Ultra Rare&quot;,&quot;set_name&quot;:&quot;Yu-Gi-Oh! The Dark Side of Dimensions Movie Pack Special Edition&quot;,&quot;set_rarity_code&quot;:&quot;(UR)&quot;,&quot;set_price&quot;:&quot;2.88&quot;},{&quot;set_code&quot;:&quot;MVP1-ENG54&quot;,&quot;set_rarity&quot;:&quot;Gold Rare&quot;,&quot;set_name&quot;:&quot;Yu-Gi-Oh! The Dark Side of Dimensions Movie Pack: Gold Edition&quot;,&quot;set_rarity_code&quot;:&quot;(GUR)&quot;,&quot;set_price&quot;:&quot;5.06&quot;},{&quot;set_code&quot;:&quot;MVP1-ENGV3&quot;,&quot;set_rarity&quot;:&quot;Gold Secret Rare&quot;,&quot;set_name&quot;:&quot;Yu-Gi-Oh! The Dark Side of Dimensions Movie Pack: Gold Edition&quot;,&quot;set_rarity_code&quot;:&quot;(GScR)&quot;,&quot;set_price&quot;:&quot;8.09&quot;},{&quot;set_code&quot;:&quot;YUCB-EN001&quot;,&quot;set_rarity&quot;:&quot;Ultra Rare&quot;,&quot;set_name&quot;:&quot;Yugi&#39;s Collector Box&quot;,&quot;set_rarity_code&quot;:&quot;(UR)&quot;,&quot;set_price&quot;:&quot;4.98&quot;},{&quot;set_code&quot;:&quot;YGLD-ENA03&quot;,&quot;set_rarity&quot;:&quot;Common&quot;,&quot;set_name&quot;:&quot;Yugi&#39;s Legendary Decks&quot;,&quot;set_rarity_code&quot;:&quot;(C)&quot;,&quot;set_price&quot;:&quot;0&quot;},{&quot;set_code&quot;:&quot;YGLD-ENB02&quot;,&quot;set_rarity&quot;:&quot;Ultra Rare&quot;,&quot;set_name&quot;:&quot;Yugi&#39;s Legendary Decks&quot;,&quot;set_rarity_code&quot;:&quot;(UR)&quot;,&quot;set_price&quot;:&quot;0&quot;},{&quot;set_code&quot;:&quot;YGLD-ENC09&quot;,&quot;set_rarity&quot;:&quot;Ultra Rare&quot;,&quot;set_name&quot;:&quot;Yugi&#39;s Legendary Decks&quot;,&quot;set_rarity_code&quot;:&quot;(UR)&quot;,&quot;set_price&quot;:&quot;0&quot;}],&quot;level&quot;:7,&quot;type&quot;:&quot;Normal Monster&quot;,&quot;archetype&quot;:&quot;Dark Magician&quot;,&quot;name&quot;:&quot;Dark Magician&quot;,&quot;atk&quot;:2500,&quot;card_images&quot;:[{&quot;image_url&quot;:&quot;https:\/\/storage.googleapis.com\/ygoprodeck.com\/pics\/46986421.jpg&quot;,&quot;image_url_small&quot;:&quot;https:\/\/storage.googleapis.com\/ygoprodeck.com\/pics_small\/46986421.jpg&quot;,&quot;id&quot;:46986421},{&quot;image_url&quot;:&quot;https:\/\/storage.googleapis.com\/ygoprodeck.com\/pics\/46986420.jpg&quot;,&quot;image_url_small&quot;:&quot;https:\/\/storage.googleapis.com\/ygoprodeck.com\/pics_small\/46986420.jpg&quot;,&quot;id&quot;:46986420},{&quot;image_url&quot;:&quot;https:\/\/storage.googleapis.com\/ygoprodeck.com\/pics\/46986414.jpg&quot;,&quot;image_url_small&quot;:&quot;https:\/\/storage.googleapis.com\/ygoprodeck.com\/pics_small\/46986414.jpg&quot;,&quot;id&quot;:46986414},{&quot;image_url&quot;:&quot;https:\/\/storage.googleapis.com\/ygoprodeck.com\/pics\/46986415.jpg&quot;,&quot;image_url_small&quot;:&quot;https:\/\/storage.googleapis.com\/ygoprodeck.com\/pics_small\/46986415.jpg&quot;,&quot;id&quot;:46986415},{&quot;image_url&quot;:&quot;https:\/\/storage.googleapis.com\/ygoprodeck.com\/pics\/46986416.jpg&quot;,&quot;image_url_small&quot;:&quot;https:\/\/storage.googleapis.com\/ygoprodeck.com\/pics_small\/46986416.jpg&quot;,&quot;id&quot;:46986416},{&quot;image_url&quot;:&quot;https:\/\/storage.googleapis.com\/ygoprodeck.com\/pics\/46986417.jpg&quot;,&quot;image_url_small&quot;:&quot;https:\/\/storage.googleapis.com\/ygoprodeck.com\/pics_small\/46986417.jpg&quot;,&quot;id&quot;:46986417},{&quot;image_url&quot;:&quot;https:\/\/storage.googleapis.com\/ygoprodeck.com\/pics\/46986418.jpg&quot;,&quot;image_url_small&quot;:&quot;https:\/\/storage.googleapis.com\/ygoprodeck.com\/pics_small\/46986418.jpg&quot;,&quot;id&quot;:46986418},{&quot;image_url&quot;:&quot;https:\/\/storage.googleapis.com\/ygoprodeck.com\/pics\/46986419.jpg&quot;,&quot;image_url_small&quot;:&quot;https:\/\/storage.googleapis.com\/ygoprodeck.com\/pics_small\/46986419.jpg&quot;,&quot;id&quot;:46986419},{&quot;image_url&quot;:&quot;https:\/\/storage.googleapis.com\/ygoprodeck.com\/pics\/36996508.jpg&quot;,&quot;image_url_small&quot;:&quot;https:\/\/storage.googleapis.com\/ygoprodeck.com\/pics_small\/36996508.jpg&quot;,&quot;id&quot;:36996508}],&quot;id&quot;:46986421,&quot;attribute&quot;:&quot;DARK&quot;,&quot;desc&quot;:&quot;The ultimate wizard in terms of attack and defense.&quot;}]}
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.38">
+      <div class="step-ref passed">38</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.39">
+      <div class="step-ref passed">39</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match each response.data[0].card_sets contains { set_price: &#39;#? _ &gt;= 0&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">315</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[6:41]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[6:41]</span>
+                <span class="scenario-name">Verificar se o preco da primeira prova e igual a 11.37</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>109</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[6:41]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[6:41]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def url_base = &#39;https://db.ygoprodeck.com/api/v7/cardinfo.php&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4">12:01:09.585 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.42">
+      <div class="step-ref passed">42</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url url_base</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.43">
+      <div class="step-ref passed">43</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>path &#39;?name=Dark_Magician&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.44">
+      <div class="step-ref passed">44</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">103</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.44">12:01:09.617 request:
+1 &gt; GET https://db.ygoprodeck.com/api/v7/cardinfo.php/?name=Dark_Magician
+1 &gt; Host: db.ygoprodeck.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.1)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+12:01:09.716 response time in milliseconds: 97
+1 &lt; 200
+1 &lt; Date: Thu, 25 Nov 2021 15:01:05 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Connection: keep-alive
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Access-Control-Allow-Methods: GET
+1 &lt; Access-Control-Allow-Headers: Content-Type, Authorization, X-Requested-With
+1 &lt; Vary: Accept-Encoding,User-Agent
+1 &lt; Last-Modified: Thu, 25 Nov 2021 14:47:26 GMT
+1 &lt; Cache-Control: max-age=10800
+1 &lt; CF-Cache-Status: HIT
+1 &lt; Age: 819
+1 &lt; Accept-Ranges: bytes
+1 &lt; Expect-CT: max-age=604800, report-uri=&quot;https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct&quot;
+1 &lt; Server: cloudflare
+1 &lt; CF-RAY: 6b3bc015df2f79ba-GRU
+1 &lt; alt-svc: h3=&quot;:443&quot;; ma=86400, h3-29=&quot;:443&quot;; ma=86400, h3-28=&quot;:443&quot;; ma=86400, h3-27=&quot;:443&quot;; ma=86400
+{&quot;data&quot;:[{&quot;card_prices&quot;:[{&quot;coolstuffinc_price&quot;:&quot;4.99&quot;,&quot;tcgplayer_price&quot;:&quot;0.46&quot;,&quot;amazon_price&quot;:&quot;7.24&quot;,&quot;ebay_price&quot;:&quot;9.75&quot;,&quot;cardmarket_price&quot;:&quot;0.09&quot;}],&quot;def&quot;:2100,&quot;race&quot;:&quot;Spellcaster&quot;,&quot;card_sets&quot;:[{&quot;set_code&quot;:&quot;CT13-EN003&quot;,&quot;set_rarity&quot;:&quot;Ultra Rare&quot;,&quot;set_name&quot;:&quot;2016 Mega-Tins&quot;,&quot;set_rarity_code&quot;:&quot;(UR)&quot;,&quot;set_price&quot;:&quot;11.37&quot;},{&quot;set_code&quot;:&quot;CT14-EN001&quot;,&quot;set_rarity&quot;:&quot;Secret Rare&quot;,&quot;set_name&quot;:&quot;2017 Mega-Tins&quot;,&quot;set_rarity_code&quot;:&quot;(ScR)&quot;,&quot;set_price&quot;:&quot;6.77&quot;},{&quot;set_code&quot;:&quot;BPT-001&quot;,&quot;set_rarity&quot;:&quot;Secret Rare&quot;,&quot;set_name&quot;:&quot;Booster Pack Collectors Tins 2002&quot;,&quot;set_rarity_code&quot;:&quot;(ScR)&quot;,&quot;set_price&quot;:&quot;77.16&quot;},{&quot;set_code&quot;:&quot;BPT-007&quot;,&quot;set_rarity&quot;:&quot;Secret Rare&quot;,&quot;set_name&quot;:&quot;Collectible Tins 2003&quot;,&quot;set_rarity_code&quot;:&quot;(ScR)&quot;,&quot;set_price&quot;:&quot;19.51&quot;},{&quot;set_code&quot;:&quot;DB1-EN102&quot;,&quot;set_rarity&quot;:&quot;Ultra Rare&quot;,&quot;set_name&quot;:&quot;Dark Beginning 1&quot;,&quot;set_rarity_code&quot;:&quot;(UR)&quot;,&quot;set_price&quot;:&quot;25.12&quot;},{&quot;set_code&quot;:&quot;DLG1-EN004&quot;,&quot;set_rarity&quot;:&quot;Rare&quot;,&quot;set_name&quot;:&quot;Dark Legends&quot;,&quot;set_rarity_code&quot;:&quot;(R)&quot;,&quot;set_price&quot;:&quot;16.39&quot;},{&quot;set_code&quot;:&quot;DUPO-EN101&quot;,&quot;set_rarity&quot;:&quot;Ultra Rare&quot;,&quot;set_name&quot;:&quot;Duel Power&quot;,&quot;set_rarity_code&quot;:&quot;(UR)&quot;,&quot;set_price&quot;:&quot;4.32&quot;},{&quot;set_code&quot;:&quot;DTP1-EN002&quot;,&quot;set_rarity&quot;:&quot;Duel Terminal Normal Parallel Rare&quot;,&quot;set_name&quot;:&quot;Duel Terminal - Preview Wave 1&quot;,&quot;set_rarity_code&quot;:&quot;(DNPR)&quot;,&quot;set_price&quot;:&quot;0.00&quot;},{&quot;set_code&quot;:&quot;DTP1-EN002&quot;,&quot;set_rarity&quot;:&quot;Duel Terminal Rare Parallel Rare&quot;,&quot;set_name&quot;:&quot;Duel Terminal - Preview Wave 2&quot;,&quot;set_rarity_code&quot;:&quot;(DRPR)&quot;,&quot;set_price&quot;:&quot;0.00&quot;},{&quot;set_code&quot;:&quot;DT01-EN002&quot;,&quot;set_rarity&quot;:&quot;Duel Terminal Rare Parallel Rare&quot;,&quot;set_name&quot;:&quot;Duel Terminal 1&quot;,&quot;set_rarity_code&quot;:&quot;(DRPR)&quot;,&quot;set_price&quot;:&quot;18.56&quot;},{&quot;set_code&quot;:&quot;DL11-EN001&quot;,&quot;set_rarity&quot;:&quot;Rare&quot;,&quot;set_name&quot;:&quot;Duelist League 2 participation cards&quot;,&quot;set_rarity_code&quot;:&quot;(R)&quot;,&quot;set_price&quot;:&quot;679.42&quot;},{&quot;set_code&quot;:&quot;DPBC-EN008&quot;,&quot;set_rarity&quot;:&quot;Super Rare&quot;,&quot;set_name&quot;:&quot;Duelist Pack: Battle City&quot;,&quot;set_rarity_code&quot;:&quot;(SR)&quot;,&quot;set_price&quot;:&quot;6.69&quot;},{&quot;set_code&quot;:&quot;DPYG-EN001&quot;,&quot;set_rarity&quot;:&quot;Rare&quot;,&quot;set_name&quot;:&quot;Duelist Pack: Yugi&quot;,&quot;set_rarity_code&quot;:&quot;(R)&quot;,&quot;set_price&quot;:&quot;2.58&quot;},{&quot;set_code&quot;:&quot;DUSA-EN100&quot;,&quot;set_rarity&quot;:&quot;Ultra Rare&quot;,&quot;set_name&quot;:&quot;Duelist Saga&quot;,&quot;set_rarity_code&quot;:&quot;(UR)&quot;,&quot;set_price&quot;:&quot;9.84&quot;},{&quot;set_code&quot;:&quot;FL1-EN002&quot;,&quot;set_rarity&quot;:&quot;Secret Rare&quot;,&quot;set_name&quot;:&quot;Forbidden Legacy&quot;,&quot;set_rarity_code&quot;:&quot;(ScR)&quot;,&quot;set_price&quot;:&quot;17.9&quot;},{&quot;set_code&quot;:&quot;GFTP-EN128&quot;,&quot;set_rarity&quot;:&quot;Ghost Rare&quot;,&quot;set_name&quot;:&quot;Ghosts From the Past (set)&quot;,&quot;set_rarity_code&quot;:&quot;(GR)&quot;,&quot;set_price&quot;:&quot;717.85&quot;},{&quot;set_code&quot;:&quot;2021-EN001&quot;,&quot;set_rarity&quot;:&quot;Extra Secret Rare&quot;,&quot;set_name&quot;:&quot;KC Grand Tournament 2021 prize card&quot;,&quot;set_rarity_code&quot;:&quot;&quot;,&quot;set_price&quot;:&quot;0.00&quot;},{&quot;set_code&quot;:&quot;LOB-005&quot;,&quot;set_rarity&quot;:&quot;Ultra Rare&quot;,&quot;set_name&quot;:&quot;Legend of Blue Eyes White Dragon&quot;,&quot;set_rarity_code&quot;:&quot;(UR)&quot;,&quot;set_price&quot;:&quot;39.98&quot;},{&quot;set_code&quot;:&quot;LOB-E003&quot;,&quot;set_rarity&quot;:&quot;Ultra Rare&quot;,&quot;set_name&quot;:&quot;Legend of Blue Eyes White Dragon&quot;,&quot;set_rarity_code&quot;:&quot;(UR)&quot;,&quot;set_price&quot;:&quot;55.73&quot;},{&quot;set_code&quot;:&quot;LOB-EN005&quot;,&quot;set_rarity&quot;:&quot;Ultra Rare&quot;,&quot;set_name&quot;:&quot;Legend of Blue Eyes White Dragon&quot;,&quot;set_rarity_code&quot;:&quot;(UR)&quot;,&quot;set_price&quot;:&quot;60.17&quot;},{&quot;set_code&quot;:&quot;LC01-EN005&quot;,&quot;set_rarity&quot;:&quot;Ultra Rare&quot;,&quot;set_name&quot;:&quot;Legendary Collection&quot;,&quot;set_rarity_code&quot;:&quot;(UR)&quot;,&quot;set_price&quot;:&quot;5.63&quot;},{&quot;set_code&quot;:&quot;LCYW-EN001&quot;,&quot;set_rarity&quot;:&quot;Secret Rare&quot;,&quot;set_name&quot;:&quot;Legendary Collection 3: Yugi&#39;s World Mega Pack&quot;,&quot;set_rarity_code&quot;:&quot;(ScR)&quot;,&quot;set_price&quot;:&quot;16.89&quot;},{&quot;set_code&quot;:&quot;LDK2-ENY10&quot;,&quot;set_rarity&quot;:&quot;Common&quot;,&quot;set_name&quot;:&quot;Legendary Decks II&quot;,&quot;set_rarity_code&quot;:&quot;(C)&quot;,&quot;set_price&quot;:&quot;2.3&quot;},{&quot;set_code&quot;:&quot;LEDD-ENA01&quot;,&quot;set_rarity&quot;:&quot;Common&quot;,&quot;set_name&quot;:&quot;Legendary Dragon Decks&quot;,&quot;set_rarity_code&quot;:&quot;(C)&quot;,&quot;set_price&quot;:&quot;1.71&quot;},{&quot;set_code&quot;:&quot;MAGO-EN002&quot;,&quot;set_rarity&quot;:&quot;Premium Gold Rare&quot;,&quot;set_name&quot;:&quot;Maximum Gold&quot;,&quot;set_rarity_code&quot;:&quot;(PG)&quot;,&quot;set_price&quot;:&quot;13.59&quot;},{&quot;set_code&quot;:&quot;RP01-EN003&quot;,&quot;set_rarity&quot;:&quot;Ultra Rare&quot;,&quot;set_name&quot;:&quot;Retro Pack&quot;,&quot;set_rarity_code&quot;:&quot;(UR)&quot;,&quot;set_price&quot;:&quot;536.88&quot;},{&quot;set_code&quot;:&quot;JUMP-EN049&quot;,&quot;set_rarity&quot;:&quot;Ultra Rare&quot;,&quot;set_name&quot;:&quot;Shonen Jump Vol. 9, Issue 4 promotional card&quot;,&quot;set_rarity_code&quot;:&quot;(UR)&quot;,&quot;set_price&quot;:&quot;109.57&quot;},{&quot;set_code&quot;:&quot;SS01-ENA01&quot;,&quot;set_rarity&quot;:&quot;Common&quot;,&quot;set_name&quot;:&quot;Speed Duel Starter Decks: Destiny Masters&quot;,&quot;set_rarity_code&quot;:&quot;(C)&quot;,&quot;set_price&quot;:&quot;1.49&quot;},{&quot;set_code&quot;:&quot;SS04-ENA01&quot;,&quot;set_rarity&quot;:&quot;Common&quot;,&quot;set_name&quot;:&quot;Speed Duel Starter Decks: Match of the Millennium&quot;,&quot;set_rarity_code&quot;:&quot;(C)&quot;,&quot;set_price&quot;:&quot;1.63&quot;},{&quot;set_code&quot;:&quot;STP1-EN001&quot;,&quot;set_rarity&quot;:&quot;Ultra Rare&quot;,&quot;set_name&quot;:&quot;Speed Duel Tournament Pack 1&quot;,&quot;set_rarity_code&quot;:&quot;(UR)&quot;,&quot;set_price&quot;:&quot;109.6&quot;},{&quot;set_code&quot;:&quot;SBCB-EN001&quot;,&quot;set_rarity&quot;:&quot;Common&quot;,&quot;set_name&quot;:&quot;Speed Duel: Battle City Box&quot;,&quot;set_rarity_code&quot;:&quot;(C)&quot;,&quot;set_price&quot;:&quot;1.52&quot;},{&quot;set_code&quot;:&quot;SBCB-EN001&quot;,&quot;set_rarity&quot;:&quot;Secret Rare&quot;,&quot;set_name&quot;:&quot;Speed Duel: Battle City Box&quot;,&quot;set_rarity_code&quot;:&quot;(ScR)&quot;,&quot;set_price&quot;:&quot;7.3&quot;},{&quot;set_code&quot;:&quot;SDY-006&quot;,&quot;set_rarity&quot;:&quot;Ultra Rare&quot;,&quot;set_name&quot;:&quot;Starter Deck: Yugi&quot;,&quot;set_rarity_code&quot;:&quot;(UR)&quot;,&quot;set_price&quot;:&quot;14.79&quot;},{&quot;set_code&quot;:&quot;SDY-E005&quot;,&quot;set_rarity&quot;:&quot;Ultra Rare&quot;,&quot;set_name&quot;:&quot;Starter Deck: Yugi&quot;,&quot;set_rarity_code&quot;:&quot;(UR)&quot;,&quot;set_price&quot;:&quot;24.43&quot;},{&quot;set_code&quot;:&quot;SYE-001&quot;,&quot;set_rarity&quot;:&quot;Super Rare&quot;,&quot;set_name&quot;:&quot;Starter Deck: Yugi Evolution&quot;,&quot;set_rarity_code&quot;:&quot;(SR)&quot;,&quot;set_price&quot;:&quot;5.77&quot;},{&quot;set_code&quot;:&quot;YSYR-EN001&quot;,&quot;set_rarity&quot;:&quot;Common&quot;,&quot;set_name&quot;:&quot;Starter Deck: Yugi Reloaded&quot;,&quot;set_rarity_code&quot;:&quot;(C)&quot;,&quot;set_price&quot;:&quot;2.47&quot;},{&quot;set_code&quot;:&quot;YSYR-EN001&quot;,&quot;set_rarity&quot;:&quot;Ultimate Rare&quot;,&quot;set_name&quot;:&quot;Starter Deck: Yugi Reloaded&quot;,&quot;set_rarity_code&quot;:&quot;(UtR)&quot;,&quot;set_price&quot;:&quot;13.29&quot;},{&quot;set_code&quot;:&quot;SD6-EN003&quot;,&quot;set_rarity&quot;:&quot;Common&quot;,&quot;set_name&quot;:&quot;Structure Deck: Spellcaster&#39;s Judgment&quot;,&quot;set_rarity_code&quot;:&quot;(C)&quot;,&quot;set_price&quot;:&quot;2.78&quot;},{&quot;set_code&quot;:&quot;SDMY-EN010&quot;,&quot;set_rarity&quot;:&quot;Common&quot;,&quot;set_name&quot;:&quot;Structure Deck: Yugi Muto&quot;,&quot;set_rarity_code&quot;:&quot;(C)&quot;,&quot;set_price&quot;:&quot;5.73&quot;},{&quot;set_code&quot;:&quot;JMPS-EN003&quot;,&quot;set_rarity&quot;:&quot;Ultra Rare&quot;,&quot;set_name&quot;:&quot;WSJ Jump Pack Fall 2016 promotional card&quot;,&quot;set_rarity_code&quot;:&quot;(UR)&quot;,&quot;set_price&quot;:&quot;113.64&quot;},{&quot;set_code&quot;:&quot;DDS-002&quot;,&quot;set_rarity&quot;:&quot;Prismatic Secret Rare&quot;,&quot;set_name&quot;:&quot;Yu-Gi-Oh! Dark Duel Stories promotional cards&quot;,&quot;set_rarity_code&quot;:&quot;(PScR)&quot;,&quot;set_price&quot;:&quot;1672.85&quot;},{&quot;set_code&quot;:&quot;PCY-004&quot;,&quot;set_rarity&quot;:&quot;Prismatic Secret Rare&quot;,&quot;set_name&quot;:&quot;Yu-Gi-Oh! Power of Chaos: Yugi the Destiny promotional cards&quot;,&quot;set_rarity_code&quot;:&quot;(PScR)&quot;,&quot;set_price&quot;:&quot;68.29&quot;},{&quot;set_code&quot;:&quot;PCY-E004&quot;,&quot;set_rarity&quot;:&quot;Prismatic Secret Rare&quot;,&quot;set_name&quot;:&quot;Yu-Gi-Oh! Power of Chaos: Yugi the Destiny promotional cards&quot;,&quot;set_rarity_code&quot;:&quot;(PScR)&quot;,&quot;set_price&quot;:&quot;90.88&quot;},{&quot;set_code&quot;:&quot;MVP1-EN054&quot;,&quot;set_rarity&quot;:&quot;Ultra Rare&quot;,&quot;set_name&quot;:&quot;Yu-Gi-Oh! The Dark Side of Dimensions Movie Pack&quot;,&quot;set_rarity_code&quot;:&quot;(UR)&quot;,&quot;set_price&quot;:&quot;4.81&quot;},{&quot;set_code&quot;:&quot;MVP1-ENS54&quot;,&quot;set_rarity&quot;:&quot;Secret Rare&quot;,&quot;set_name&quot;:&quot;Yu-Gi-Oh! The Dark Side of Dimensions Movie Pack Secret Edition&quot;,&quot;set_rarity_code&quot;:&quot;(ScR)&quot;,&quot;set_price&quot;:&quot;7.47&quot;},{&quot;set_code&quot;:&quot;MVP1-ENSV3&quot;,&quot;set_rarity&quot;:&quot;Ultra Rare&quot;,&quot;set_name&quot;:&quot;Yu-Gi-Oh! The Dark Side of Dimensions Movie Pack Secret Edition&quot;,&quot;set_rarity_code&quot;:&quot;(UR)&quot;,&quot;set_price&quot;:&quot;4.17&quot;},{&quot;set_code&quot;:&quot;MVP1-ENSE3&quot;,&quot;set_rarity&quot;:&quot;Ultra Rare&quot;,&quot;set_name&quot;:&quot;Yu-Gi-Oh! The Dark Side of Dimensions Movie Pack Special Edition&quot;,&quot;set_rarity_code&quot;:&quot;(UR)&quot;,&quot;set_price&quot;:&quot;2.88&quot;},{&quot;set_code&quot;:&quot;MVP1-ENG54&quot;,&quot;set_rarity&quot;:&quot;Gold Rare&quot;,&quot;set_name&quot;:&quot;Yu-Gi-Oh! The Dark Side of Dimensions Movie Pack: Gold Edition&quot;,&quot;set_rarity_code&quot;:&quot;(GUR)&quot;,&quot;set_price&quot;:&quot;5.06&quot;},{&quot;set_code&quot;:&quot;MVP1-ENGV3&quot;,&quot;set_rarity&quot;:&quot;Gold Secret Rare&quot;,&quot;set_name&quot;:&quot;Yu-Gi-Oh! The Dark Side of Dimensions Movie Pack: Gold Edition&quot;,&quot;set_rarity_code&quot;:&quot;(GScR)&quot;,&quot;set_price&quot;:&quot;8.09&quot;},{&quot;set_code&quot;:&quot;YUCB-EN001&quot;,&quot;set_rarity&quot;:&quot;Ultra Rare&quot;,&quot;set_name&quot;:&quot;Yugi&#39;s Collector Box&quot;,&quot;set_rarity_code&quot;:&quot;(UR)&quot;,&quot;set_price&quot;:&quot;4.98&quot;},{&quot;set_code&quot;:&quot;YGLD-ENA03&quot;,&quot;set_rarity&quot;:&quot;Common&quot;,&quot;set_name&quot;:&quot;Yugi&#39;s Legendary Decks&quot;,&quot;set_rarity_code&quot;:&quot;(C)&quot;,&quot;set_price&quot;:&quot;0&quot;},{&quot;set_code&quot;:&quot;YGLD-ENB02&quot;,&quot;set_rarity&quot;:&quot;Ultra Rare&quot;,&quot;set_name&quot;:&quot;Yugi&#39;s Legendary Decks&quot;,&quot;set_rarity_code&quot;:&quot;(UR)&quot;,&quot;set_price&quot;:&quot;0&quot;},{&quot;set_code&quot;:&quot;YGLD-ENC09&quot;,&quot;set_rarity&quot;:&quot;Ultra Rare&quot;,&quot;set_name&quot;:&quot;Yugi&#39;s Legendary Decks&quot;,&quot;set_rarity_code&quot;:&quot;(UR)&quot;,&quot;set_price&quot;:&quot;0&quot;}],&quot;level&quot;:7,&quot;type&quot;:&quot;Normal Monster&quot;,&quot;archetype&quot;:&quot;Dark Magician&quot;,&quot;name&quot;:&quot;Dark Magician&quot;,&quot;atk&quot;:2500,&quot;card_images&quot;:[{&quot;image_url&quot;:&quot;https:\/\/storage.googleapis.com\/ygoprodeck.com\/pics\/46986421.jpg&quot;,&quot;image_url_small&quot;:&quot;https:\/\/storage.googleapis.com\/ygoprodeck.com\/pics_small\/46986421.jpg&quot;,&quot;id&quot;:46986421},{&quot;image_url&quot;:&quot;https:\/\/storage.googleapis.com\/ygoprodeck.com\/pics\/46986420.jpg&quot;,&quot;image_url_small&quot;:&quot;https:\/\/storage.googleapis.com\/ygoprodeck.com\/pics_small\/46986420.jpg&quot;,&quot;id&quot;:46986420},{&quot;image_url&quot;:&quot;https:\/\/storage.googleapis.com\/ygoprodeck.com\/pics\/46986414.jpg&quot;,&quot;image_url_small&quot;:&quot;https:\/\/storage.googleapis.com\/ygoprodeck.com\/pics_small\/46986414.jpg&quot;,&quot;id&quot;:46986414},{&quot;image_url&quot;:&quot;https:\/\/storage.googleapis.com\/ygoprodeck.com\/pics\/46986415.jpg&quot;,&quot;image_url_small&quot;:&quot;https:\/\/storage.googleapis.com\/ygoprodeck.com\/pics_small\/46986415.jpg&quot;,&quot;id&quot;:46986415},{&quot;image_url&quot;:&quot;https:\/\/storage.googleapis.com\/ygoprodeck.com\/pics\/46986416.jpg&quot;,&quot;image_url_small&quot;:&quot;https:\/\/storage.googleapis.com\/ygoprodeck.com\/pics_small\/46986416.jpg&quot;,&quot;id&quot;:46986416},{&quot;image_url&quot;:&quot;https:\/\/storage.googleapis.com\/ygoprodeck.com\/pics\/46986417.jpg&quot;,&quot;image_url_small&quot;:&quot;https:\/\/storage.googleapis.com\/ygoprodeck.com\/pics_small\/46986417.jpg&quot;,&quot;id&quot;:46986417},{&quot;image_url&quot;:&quot;https:\/\/storage.googleapis.com\/ygoprodeck.com\/pics\/46986418.jpg&quot;,&quot;image_url_small&quot;:&quot;https:\/\/storage.googleapis.com\/ygoprodeck.com\/pics_small\/46986418.jpg&quot;,&quot;id&quot;:46986418},{&quot;image_url&quot;:&quot;https:\/\/storage.googleapis.com\/ygoprodeck.com\/pics\/46986419.jpg&quot;,&quot;image_url_small&quot;:&quot;https:\/\/storage.googleapis.com\/ygoprodeck.com\/pics_small\/46986419.jpg&quot;,&quot;id&quot;:46986419},{&quot;image_url&quot;:&quot;https:\/\/storage.googleapis.com\/ygoprodeck.com\/pics\/36996508.jpg&quot;,&quot;image_url_small&quot;:&quot;https:\/\/storage.googleapis.com\/ygoprodeck.com\/pics_small\/36996508.jpg&quot;,&quot;id&quot;:36996508}],&quot;id&quot;:46986421,&quot;attribute&quot;:&quot;DARK&quot;,&quot;desc&quot;:&quot;The ultimate wizard in terms of attack and defense.&quot;}]}
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.45">
+      <div class="step-ref passed">45</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.46">
+      <div class="step-ref passed">46</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.data[0].card_sets[0] contains { set_price: &#39;11.37&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
