@@ -1,3 +1,4 @@
+@y
 Feature: Executar testes funcionais na api Yu-Gi-Oh!
 
 Background: Executa antes de cada teste

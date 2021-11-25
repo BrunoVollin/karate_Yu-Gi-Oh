@@ -9,7 +9,7 @@ class ApiTestRunner {
     @Test
     void testParallel() {
         Results results = Runner.path("classpath:examples")
-                .tags("~@ignore")
+                .tags("@y")
                 //.outputCucumberJson(true)
                 .parallel(5);
         assertEquals(0, results.getFailCount(), results.getErrorMessages());
